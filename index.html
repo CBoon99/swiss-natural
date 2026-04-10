@@ -1,0 +1,3559 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Swiss Natural — Getreidefreies Hundefutter aus der Schweiz</title>
+<meta name="description" content="Sanftes, getreidefreies Hundefutter mit echtem Schweizer Fleisch. Kein Getreide, keine Kompromisse. Jetzt Abo sparen bis 10%.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#1e3a2f">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://www.swissnatural.ch/" id="sn-canonical">
+<meta property="og:title" content="Swiss Natural — Natürliches Futter für treue Begleiter">
+<meta property="og:description" content="Sanftes, getreidefreies Hundefutter mit echtem Schweizer Fleisch. Kein Getreide, keine Kompromisse. Jetzt Abo sparen bis 10%.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.swissnatural.ch/">
+<meta property="og:site_name" content="Swiss Natural">
+<meta property="og:locale" content="de_CH">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:image" content="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&amp;h=630&amp;fit=crop&amp;q=82">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Glücklicher Hund — Swiss Natural Tierfutter">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Swiss Natural — Natürliches Futter für treue Begleiter">
+<meta name="twitter:description" content="Sanftes, getreidefreies Hundefutter mit echtem Schweizer Fleisch. Kein Getreide, keine Kompromisse. Jetzt Abo sparen bis 10%.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&amp;h=630&amp;fit=crop&amp;q=82">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════════ */
+:root {
+  --forest:   #1e3a2f;
+  --forest-mid: #2d5c47;
+  --forest-light: #3d7a60;
+  --sage:     #7aab8e;
+  --sage-light: #b2d4c2;
+  --cream:    #f8f5ef;
+  --parchment:#ede8df;
+  --warm-white:#fdfcf9;
+  --gold:     #c4953a;
+  --gold-light:#dbb86a;
+  --charcoal: #1a1a1a;
+  --mid:      #5a5a5a;
+  --light:    #9a9a9a;
+  --red:      #c0392b;
+
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans:  'Outfit', system-ui, sans-serif;
+  --ease:  cubic-bezier(.4,0,.2,1);
+  --ease-out: cubic-bezier(0,.6,.4,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--warm-white);
+  color: var(--charcoal);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════════
+   ANNOUNCEMENT BAR
+═══════════════════════════════════════════ */
+.ann-bar {
+  position: relative;
+  background: var(--forest);
+  color: rgba(255,255,255,.88);
+  font-size: .78rem;
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-align: center;
+  padding: .55rem max(2.75rem, env(safe-area-inset-right, 0)) .55rem max(1rem, env(safe-area-inset-left, 0));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+.ann-bar strong { color: var(--gold-light); }
+.ann-close {
+  position: absolute;
+  right: max(.65rem, env(safe-area-inset-right, 0));
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  color: rgba(255,255,255,.5);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: color .2s, background .2s;
+}
+.ann-close:hover { color: #fff; background: rgba(255,255,255,.08); }
+
+/* ═══════════════════════════════════════════
+   NAV
+═══════════════════════════════════════════ */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: rgba(253,252,249,.95);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 0 max(2.5rem, env(safe-area-inset-right, 0)) 0 max(2.5rem, env(safe-area-inset-left, 0));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 68px;
+  transition: box-shadow .3s var(--ease);
+}
+nav.shadow { box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  text-decoration: none;
+  min-width: 0;
+}
+.nav-logo-mark {
+  width: 38px; height: 38px;
+  background: var(--forest);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.nav-logo-mark svg { width: 22px; height: 22px; transition: transform .35s var(--ease); }
+.nav-logo:hover .nav-logo-mark svg { transform: scale(1.06); }
+.nav-wordmark {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--forest);
+  line-height: 1;
+  min-width: 0;
+}
+.nav-wordmark span {
+  display: block;
+  font-family: var(--sans);
+  font-size: .65rem;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-top: 2px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  list-style: none;
+}
+.nav-links a {
+  font-size: .85rem;
+  font-weight: 400;
+  color: var(--mid);
+  text-decoration: none;
+  padding: .45rem .75rem;
+  border-radius: 6px;
+  transition: color .2s, background .2s;
+}
+.nav-links a:hover { color: var(--forest); background: var(--parchment); }
+.nav-links .active { color: var(--forest); font-weight: 500; }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .75rem;
+  flex-shrink: 0;
+}
+.nav-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--mid);
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: .5rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: color .2s, background .2s, transform .2s var(--ease);
+}
+.nav-icon-btn:active { transform: scale(0.94); }
+.nav-icon-btn:hover { color: var(--forest); background: var(--parchment); }
+.cart-badge {
+  position: absolute;
+  top: 2px; right: 2px;
+  background: var(--forest);
+  color: #fff;
+  font-size: .6rem;
+  font-weight: 600;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.btn-nav-cta {
+  background: var(--forest);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: .55rem 1.1rem;
+  font-family: var(--sans);
+  font-size: .82rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  transition: background .2s, transform .15s;
+}
+.btn-nav-cta:hover { background: var(--forest-mid); transform: translateY(-1px); }
+
+/* Language toggle (nav, top right) */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: .35rem .25rem;
+  min-height: 2.75rem;
+  font-family: var(--sans);
+  color: var(--mid);
+  border-radius: 10px;
+  transition: background .2s, transform .2s var(--ease);
+}
+.lang-toggle:hover { background: var(--parchment); }
+.lang-toggle:active { transform: scale(0.96); }
+.lang-toggle:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 2px;
+}
+.lang-toggle-track {
+  width: 48px;
+  height: 28px;
+  border-radius: 100px;
+  background: var(--parchment);
+  border: 1.5px solid rgba(30,58,47,.18);
+  position: relative;
+  flex-shrink: 0;
+  transition: border-color .25s var(--ease), background .25s var(--ease), box-shadow .25s var(--ease);
+}
+.lang-toggle:hover .lang-toggle-track { border-color: var(--sage); box-shadow: 0 0 0 3px rgba(30,58,47,.06); }
+.lang-toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--forest-mid), var(--forest));
+  transition: transform .32s cubic-bezier(.34, 1.4, .64, 1), box-shadow .25s;
+  box-shadow: 0 2px 6px rgba(30,58,47,.28);
+}
+html.lang-en .lang-toggle-knob { transform: translateX(20px); }
+html.lang-en .lang-toggle-track {
+  background: rgba(30,58,47,.1);
+  border-color: rgba(30,58,47,.22);
+  box-shadow: inset 0 1px 2px rgba(255,255,255,.5);
+}
+.lang-toggle-labels {
+  display: flex;
+  gap: .35rem;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+.lang-toggle-labels span { opacity: .45; transition: opacity .22s, color .22s, transform .22s; }
+html:not(.lang-en) .lang-toggle-labels .lbl-de,
+html.lang-en .lang-toggle-labels .lbl-en {
+  opacity: 1;
+  color: var(--forest);
+  transform: translateY(-0.5px);
+}
+
+.nav-burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: .5rem;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  transition: background .2s;
+}
+.nav-burger:hover { background: var(--parchment); }
+.nav-burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--charcoal);
+  border-radius: 1px;
+  transition: transform .3s var(--ease), opacity .2s;
+  transform-origin: center;
+}
+.nav-burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-burger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile navigation drawer */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15,31,24,.45);
+  z-index: 250;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s var(--ease);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+.nav-overlay.open { opacity: 1; pointer-events: all; }
+.nav-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(20rem, 100vw - 2.5rem);
+  max-width: 100%;
+  height: 100%;
+  height: 100dvh;
+  background: var(--warm-white);
+  z-index: 251;
+  transform: translateX(100%);
+  transition: transform .38s cubic-bezier(.32,.72,0,1);
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 40px rgba(0,0,0,.12);
+  padding: max(1rem, env(safe-area-inset-top, 0)) max(1rem, env(safe-area-inset-right, 0)) 1rem max(1rem, env(safe-area-inset-left, 0));
+}
+.nav-drawer.open { transform: translateX(0); }
+.nav-drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid var(--parchment);
+}
+.nav-drawer-title {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--forest);
+}
+.nav-drawer-close {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--parchment);
+  color: var(--charcoal);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s, color .2s;
+}
+.nav-drawer-close:hover { background: var(--cream); color: var(--forest); }
+.nav-drawer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+}
+.nav-drawer-links a {
+  display: block;
+  padding: .85rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  text-decoration: none;
+  transition: background .2s, color .2s, transform .2s;
+}
+.nav-drawer-links a:hover,
+.nav-drawer-links a:focus-visible {
+  background: var(--cream);
+  color: var(--forest);
+}
+.nav-drawer-links a:active { transform: scale(0.98); }
+
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+#hero {
+  position: relative;
+  min-height: 92vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 4rem 6rem 5rem;
+  position: relative;
+  z-index: 2;
+  background: var(--cream);
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--forest-mid);
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp .7s var(--ease-out) .2s forwards;
+}
+.hero-eyebrow::before {
+  content: '';
+  width: 20px; height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+.hero-h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 4.5vw, 4rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--charcoal);
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp .7s var(--ease-out) .35s forwards;
+}
+.hero-h1 em { font-style: italic; color: var(--forest); }
+
+.hero-sub {
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--mid);
+  max-width: 420px;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeUp .7s var(--ease-out) .5s forwards;
+}
+
+.hero-actions {
+  display: flex;
+  gap: .9rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeUp .7s var(--ease-out) .65s forwards;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: var(--forest);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: .9rem;
+  font-weight: 500;
+  padding: .85rem 1.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background .2s, transform .2s, box-shadow .2s;
+  box-shadow: 0 4px 16px rgba(30,58,47,.25);
+}
+.btn-primary:hover {
+  background: var(--forest-mid);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(30,58,47,.3);
+}
+.btn-primary:active { transform: translateY(0) scale(0.985); box-shadow: 0 4px 14px rgba(30,58,47,.22); }
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: transparent;
+  color: var(--forest);
+  font-family: var(--sans);
+  font-size: .9rem;
+  font-weight: 500;
+  padding: .85rem 1.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1.5px solid rgba(30,58,47,.25);
+  cursor: pointer;
+  transition: border-color .2s, background .2s;
+}
+.btn-secondary:hover {
+  border-color: var(--forest);
+  background: var(--parchment);
+}
+.btn-secondary:active { transform: scale(0.985); }
+
+.hero-trust {
+  display: flex;
+  gap: 1.75rem;
+  opacity: 0;
+  animation: fadeUp .7s var(--ease-out) .8s forwards;
+}
+.trust-pill {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .78rem;
+  font-weight: 500;
+  color: var(--mid);
+}
+.trust-pill svg { color: var(--forest); flex-shrink: 0; }
+
+.hero-right {
+  position: relative;
+  overflow: hidden;
+}
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.06);
+  animation: heroImgIn 1.2s var(--ease-out) .1s forwards;
+}
+.hero-right::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--cream) 0%, transparent 18%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-badge {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  z-index: 2;
+  background: rgba(253,252,249,.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 130px;
+  animation: fadeUp .6s var(--ease-out) 1s forwards;
+  opacity: 0;
+}
+.hero-badge-num {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--forest);
+  line-height: 1;
+  animation: subtleFloat 5s ease-in-out 1.65s infinite;
+}
+.hero-badge-label {
+  font-size: .7rem;
+  font-weight: 500;
+  letter-spacing: .08em;
+  color: var(--mid);
+  margin-top: .25rem;
+}
+.hero-badge-stars {
+  display: flex;
+  gap: 1px;
+  margin-top: .4rem;
+  color: var(--gold);
+  font-size: .7rem;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroImgIn {
+  to { transform: scale(1); }
+}
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+body.nav-open { overflow: hidden; touch-action: none; }
+
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  z-index: 10000;
+  background: var(--forest);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus {
+  position: fixed;
+  top: max(.75rem, env(safe-area-inset-top, 0));
+  left: max(.75rem, env(safe-area-inset-left, 0));
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: .65rem 1.1rem;
+  overflow: visible;
+  clip: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+}
+#main-content:focus { outline: none; }
+#main-content:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* ═══════════════════════════════════════════
+   LOGO BAR
+═══════════════════════════════════════════ */
+.logo-bar {
+  background: var(--parchment);
+  border-top: 1px solid rgba(0,0,0,.06);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 1.25rem max(2.5rem, env(safe-area-inset-right, 0)) 1.25rem max(2.5rem, env(safe-area-inset-left, 0));
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+.logo-bar-label {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--light);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.logo-bar-divider { width: 1px; height: 20px; background: var(--sage-light); flex-shrink: 0; }
+.logo-bar-items {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  overflow: hidden;
+  flex: 1;
+}
+.logo-bar-item {
+  font-size: .82rem;
+  font-weight: 500;
+  color: var(--mid);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+.logo-bar-item svg { color: var(--forest); }
+
+/* ═══════════════════════════════════════════
+   SHARED SECTION STYLES
+═══════════════════════════════════════════ */
+.section-wrap { max-width: 1240px; margin: 0 auto; padding: 0 2.5rem; }
+.section-label {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--forest-mid);
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .9rem;
+}
+.section-label::before {
+  content: '';
+  width: 16px; height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+.section-h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3.5vw, 2.9rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+.section-h2 em { font-style: italic; color: var(--forest); }
+.section-body {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--mid);
+  max-width: 540px;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .65s var(--ease), transform .65s var(--ease);
+}
+.reveal.in { opacity: 1; transform: none; }
+.reveal.delay-1 { transition-delay: .1s; }
+.reveal.delay-2 { transition-delay: .2s; }
+.reveal.delay-3 { transition-delay: .3s; }
+.reveal.delay-4 { transition-delay: .4s; }
+
+/* ═══════════════════════════════════════════
+   CATEGORY BANNER (above fold #2)
+═══════════════════════════════════════════ */
+#categories {
+  padding: 5rem 0;
+  background: var(--warm-white);
+}
+.cat-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cat-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr;
+  gap: 1.25rem;
+}
+.cat-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  min-height: 300px;
+  background: var(--parchment);
+}
+.cat-card:nth-child(1) { min-height: 380px; }
+.cat-card img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s var(--ease);
+}
+.cat-card:hover img { transform: scale(1.06); }
+.cat-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,25,18,.8) 0%, rgba(10,25,18,.1) 55%, transparent 100%);
+}
+.cat-info {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 1.5rem;
+}
+.cat-tag {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--sage-light);
+  margin-bottom: .35rem;
+}
+.cat-name {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: .5rem;
+  line-height: 1.15;
+}
+.cat-card:nth-child(1) .cat-name { font-size: 2rem; }
+.cat-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .78rem;
+  font-weight: 500;
+  color: rgba(255,255,255,.75);
+  transform: translateX(-4px);
+  opacity: 0;
+  transition: transform .3s, opacity .3s;
+}
+.cat-card:hover .cat-link { transform: translateX(0); opacity: 1; }
+
+/* ═══════════════════════════════════════════
+   PRODUCTS
+═══════════════════════════════════════════ */
+#products {
+  padding: 5rem 0;
+  background: var(--cream);
+}
+.products-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.filter-tabs {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+.filter-tab {
+  background: none;
+  border: 1.5px solid var(--parchment);
+  border-radius: 100px;
+  padding: .5rem 1.05rem;
+  min-height: 2.5rem;
+  font-family: var(--sans);
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--mid);
+  cursor: pointer;
+  transition: border-color .2s, color .2s, background .2s, transform .15s var(--ease);
+}
+.filter-tab:active { transform: scale(0.97); }
+.filter-tab:hover { border-color: var(--sage); color: var(--forest); }
+.filter-tab.active {
+  background: var(--forest);
+  border-color: var(--forest);
+  color: #fff;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.prod-card {
+  background: var(--warm-white);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.prod-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.1);
+}
+.prod-img-wrap {
+  position: relative;
+  background: var(--parchment);
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.prod-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .5s var(--ease);
+}
+.prod-card:hover .prod-img-wrap img { transform: scale(1.05); }
+
+.prod-badge {
+  position: absolute;
+  top: .75rem; left: .75rem;
+  background: var(--forest);
+  color: #fff;
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: .25rem .65rem;
+  border-radius: 100px;
+}
+.prod-badge.gold { background: var(--gold); }
+.prod-badge.red { background: var(--red); }
+
+.prod-wishlist {
+  position: absolute;
+  top: .75rem; right: .75rem;
+  background: rgba(253,252,249,.85);
+  backdrop-filter: blur(6px);
+  border: none;
+  border-radius: 50%;
+  width: 34px; height: 34px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: var(--light);
+  transition: color .2s, transform .2s;
+}
+.prod-wishlist:hover { color: var(--red); transform: scale(1.1); }
+
+.prod-info {
+  padding: 1rem 1.1rem 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.prod-category {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: .3rem;
+}
+.prod-name {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  margin-bottom: .35rem;
+  line-height: 1.25;
+}
+.prod-desc {
+  font-size: .8rem;
+  color: var(--light);
+  line-height: 1.5;
+  margin-bottom: auto;
+}
+.prod-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: .9rem;
+  padding-top: .75rem;
+  border-top: 1px solid var(--parchment);
+}
+.prod-price {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+.prod-price-old {
+  font-size: .78rem;
+  font-weight: 400;
+  color: var(--light);
+  text-decoration: line-through;
+  margin-left: .3rem;
+}
+.prod-rating {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  font-size: .75rem;
+  color: var(--light);
+}
+.prod-rating .stars { color: var(--gold); font-size: .7rem; }
+
+.prod-add-btn {
+  background: var(--forest);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: .45rem .85rem;
+  font-family: var(--sans);
+  font-size: .78rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  transition: background .2s, transform .15s;
+}
+.prod-add-btn:hover { background: var(--forest-mid); transform: scale(1.04); }
+
+/* ═══════════════════════════════════════════
+   ABO / SUBSCRIPTION STRIP
+═══════════════════════════════════════════ */
+#abo {
+  padding: 4.5rem 0;
+  background: var(--forest);
+  position: relative;
+  overflow: hidden;
+}
+#abo::before {
+  content: '';
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 420px; height: 420px;
+  border-radius: 50%;
+  background: rgba(122,171,142,.08);
+  pointer-events: none;
+}
+#abo::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; left: 20%;
+  width: 260px; height: 260px;
+  border-radius: 50%;
+  background: rgba(196,149,58,.06);
+  pointer-events: none;
+}
+.abo-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.abo-content .section-label {
+  color: var(--sage-light);
+  margin-bottom: 1rem;
+}
+.abo-content .section-label::before { background: var(--gold-light); }
+.abo-content .section-h2 { color: #fff; margin-bottom: 1.25rem; }
+.abo-content .section-body { color: rgba(255,255,255,.65); margin-bottom: 2rem; }
+
+.abo-perks {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  margin-bottom: 2rem;
+}
+.abo-perk {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  font-size: .9rem;
+  color: rgba(255,255,255,.8);
+}
+.abo-perk-icon {
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  background: rgba(122,171,142,.2);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--sage-light);
+}
+
+.abo-card {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 20px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.abo-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--sage));
+}
+.abo-card-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  background: rgba(196,149,58,.2);
+  color: var(--gold-light);
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .3rem .7rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+}
+.abo-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+}
+.abo-price-big {
+  font-family: var(--serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+}
+.abo-price-label {
+  font-size: .85rem;
+  color: rgba(255,255,255,.5);
+}
+.abo-save-badge {
+  background: var(--gold);
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 700;
+  padding: .25rem .6rem;
+  border-radius: 100px;
+  margin-left: auto;
+}
+.abo-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  margin-bottom: 1.75rem;
+}
+.abo-features li {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: .85rem;
+  color: rgba(255,255,255,.75);
+}
+.abo-features li svg { color: var(--sage-light); flex-shrink: 0; }
+.btn-abo {
+  width: 100%;
+  background: var(--gold);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: .9rem;
+  font-family: var(--sans);
+  font-size: .9rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: .03em;
+  transition: background .2s, transform .15s;
+}
+.btn-abo:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+/* ═══════════════════════════════════════════
+   WHY SWISS NATURAL / VALUES
+═══════════════════════════════════════════ */
+#values {
+  padding: 6rem 0;
+  background: var(--warm-white);
+}
+.values-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.values-img-stack {
+  position: relative;
+  height: 520px;
+}
+.values-img-main {
+  position: absolute;
+  top: 0; left: 0;
+  width: 78%;
+  height: 76%;
+  object-fit: cover;
+  border-radius: 16px;
+  z-index: 2;
+}
+.values-img-accent {
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 56%;
+  height: 52%;
+  object-fit: cover;
+  border-radius: 16px;
+  z-index: 3;
+  box-shadow: -6px -6px 0 var(--warm-white);
+}
+.values-badge {
+  position: absolute;
+  top: 45%; right: -1.5rem;
+  z-index: 4;
+  background: var(--forest);
+  color: #fff;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  box-shadow: 0 8px 28px rgba(0,0,0,.18);
+  min-width: 110px;
+}
+.values-badge-big {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--gold-light);
+  line-height: 1;
+}
+.values-badge-label {
+  font-size: .68rem;
+  font-weight: 500;
+  color: rgba(255,255,255,.6);
+  margin-top: .3rem;
+  line-height: 1.3;
+}
+
+.values-pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+.pillar {
+  background: var(--cream);
+  border-radius: 14px;
+  padding: 1.25rem;
+  transition: transform .3s, box-shadow .3s;
+}
+.pillar:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.07); }
+.pillar-icon {
+  width: 40px; height: 40px;
+  background: var(--forest);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: .85rem;
+  color: var(--sage-light);
+}
+.pillar-title {
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: .35rem;
+}
+.pillar-body {
+  font-size: .8rem;
+  color: var(--mid);
+  line-height: 1.55;
+}
+
+/* ═══════════════════════════════════════════
+   REVIEWS
+═══════════════════════════════════════════ */
+#reviews {
+  padding: 5.5rem 0;
+  background: var(--cream);
+}
+.reviews-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.reviews-aggregate {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.agg-big {
+  font-family: var(--serif);
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  line-height: 1;
+}
+.agg-right { display: flex; flex-direction: column; gap: .2rem; }
+.agg-stars { color: var(--gold); font-size: 1rem; letter-spacing: 1px; }
+.agg-label { font-size: .78rem; color: var(--mid); }
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.review-card {
+  background: var(--warm-white);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: transform .3s;
+}
+.review-card:hover { transform: translateY(-4px); }
+.review-stars { color: var(--gold); font-size: .8rem; margin-bottom: .75rem; }
+.review-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: .98rem;
+  color: var(--charcoal);
+  line-height: 1.65;
+  margin-bottom: 1.1rem;
+}
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  border-top: 1px solid var(--parchment);
+  padding-top: .9rem;
+}
+.review-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--forest);
+  color: var(--sage-light);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .8rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.review-name { font-size: .82rem; font-weight: 600; color: var(--charcoal); }
+.review-date { font-size: .72rem; color: var(--light); }
+.review-tag {
+  margin-left: auto;
+  background: var(--parchment);
+  color: var(--forest);
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: .2rem .55rem;
+  border-radius: 100px;
+}
+
+/* ═══════════════════════════════════════════
+   QUIZ / FUNNEL
+═══════════════════════════════════════════ */
+#quiz {
+  padding: 5rem 0;
+  background: var(--parchment);
+}
+.quiz-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.quiz-copy .section-h2 { margin-bottom: 1.25rem; }
+.quiz-copy .section-body { margin-bottom: 2rem; }
+
+.quiz-widget {
+  background: var(--warm-white);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 40px rgba(0,0,0,.07);
+}
+.quiz-step { display: none; }
+.quiz-step.active { display: block; }
+.quiz-step-label {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: .5rem;
+}
+.quiz-question {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  color: var(--charcoal);
+  margin-bottom: 1.25rem;
+  line-height: 1.35;
+}
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  margin-bottom: 1.5rem;
+}
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .75rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--parchment);
+  cursor: pointer;
+  font-size: .9rem;
+  color: var(--charcoal);
+  transition: border-color .2s, background .2s;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-family: var(--sans);
+}
+.quiz-option:hover { border-color: var(--sage); background: var(--cream); }
+.quiz-option.selected { border-color: var(--forest); background: rgba(30,58,47,.05); color: var(--forest); font-weight: 500; }
+.quiz-option-icon { font-size: 1.2rem; width: 28px; text-align: center; }
+
+.quiz-progress {
+  height: 3px;
+  background: var(--parchment);
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+.quiz-progress-bar {
+  height: 100%;
+  background: var(--forest);
+  border-radius: 100px;
+  transition: width .4s var(--ease);
+}
+
+.quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.quiz-back {
+  background: none;
+  border: none;
+  font-size: .82rem;
+  color: var(--mid);
+  cursor: pointer;
+  padding: .4rem;
+  display: flex; align-items: center; gap: .3rem;
+  transition: color .2s;
+}
+.quiz-back:hover { color: var(--forest); }
+.quiz-result {
+  text-align: center;
+  padding: 1rem 0;
+}
+.quiz-result-title {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  color: var(--forest);
+  margin-bottom: .6rem;
+}
+.quiz-result-body {
+  font-size: .88rem;
+  color: var(--mid);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* ═══════════════════════════════════════════
+   SOCIAL PROOF BAR
+═══════════════════════════════════════════ */
+.proof-bar {
+  background: var(--forest);
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.proof-item {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  color: rgba(255,255,255,.75);
+  font-size: .82rem;
+  font-weight: 400;
+}
+.proof-item svg { color: var(--sage-light); }
+.proof-item strong { color: #fff; font-weight: 600; }
+
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+footer {
+  background: #0f1f18;
+  padding: 4.5rem 0 0;
+  color: rgba(255,255,255,.55);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.footer-brand-col .nav-logo { margin-bottom: .85rem; display: inline-flex; }
+.footer-brand-col .nav-wordmark { color: #fff; }
+.footer-tagline {
+  font-style: italic;
+  font-family: var(--serif);
+  font-size: .92rem;
+  color: rgba(255,255,255,.4);
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+  max-width: 240px;
+}
+.footer-socials {
+  display: flex;
+  gap: .6rem;
+}
+.footer-social-btn {
+  width: 34px; height: 34px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.07);
+  border: none;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: rgba(255,255,255,.5);
+  transition: background .2s, color .2s;
+}
+.footer-social-btn:hover { background: var(--forest-mid); color: #fff; }
+
+.footer-col h4 {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.85);
+  margin-bottom: 1.25rem;
+}
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
+.footer-col ul a {
+  color: rgba(255,255,255,.45);
+  text-decoration: none;
+  font-size: .85rem;
+  transition: color .2s;
+}
+.footer-col ul a:hover { color: var(--sage-light); }
+
+.footer-newsletter {
+  display: flex;
+  gap: .5rem;
+  margin-top: .5rem;
+}
+.footer-newsletter input {
+  flex: 1;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  padding: .6rem .9rem;
+  font-family: var(--sans);
+  font-size: .82rem;
+  color: #fff;
+  outline: none;
+  transition: border-color .2s;
+}
+.footer-newsletter input::placeholder { color: rgba(255,255,255,.3); }
+.footer-newsletter input:focus { border-color: var(--sage); }
+.footer-newsletter button {
+  background: var(--forest-mid);
+  border: none;
+  border-radius: 8px;
+  padding: .6rem .9rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 500;
+  font-family: var(--sans);
+  transition: background .2s;
+}
+.footer-newsletter button:hover { background: var(--forest-light); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.07);
+  padding: 1.5rem max(2.5rem, env(safe-area-inset-right, 0)) 1.5rem max(2.5rem, env(safe-area-inset-left, 0));
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom, 0));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .75rem;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.footer-payments {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+.pay-badge {
+  background: rgba(255,255,255,.08);
+  border-radius: 5px;
+  padding: .2rem .55rem;
+  font-size: .68rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.5);
+  letter-spacing: .06em;
+}
+
+/* ═══════════════════════════════════════════
+   CART DRAWER
+═══════════════════════════════════════════ */
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s;
+}
+.cart-overlay.open { opacity: 1; pointer-events: all; }
+
+.cart-drawer {
+  position: fixed;
+  top: 0; right: 0;
+  height: 100%;
+  height: 100dvh;
+  width: min(440px, 95vw);
+  max-width: calc(100vw - env(safe-area-inset-left, 0) - env(safe-area-inset-right, 0));
+  background: var(--warm-white);
+  z-index: 901;
+  transform: translateX(100%);
+  transition: transform .4s var(--ease);
+  display: flex;
+  flex-direction: column;
+  padding-top: env(safe-area-inset-top, 0);
+  padding-right: env(safe-area-inset-right, 0);
+}
+.cart-drawer.open { transform: translateX(0); }
+
+.cart-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--parchment);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-title {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--charcoal);
+}
+.cart-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--mid);
+  padding: .3rem;
+  border-radius: 6px;
+  transition: background .2s;
+}
+.cart-close:hover { background: var(--parchment); }
+
+.cart-body { flex: 1; overflow-y: auto; padding: 1.25rem 1.5rem; }
+.cart-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--light);
+}
+.cart-empty svg { margin-bottom: 1rem; opacity: .3; }
+.cart-empty p { font-size: .9rem; }
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  padding: .9rem 0;
+  border-bottom: 1px solid var(--parchment);
+}
+.cart-item-img {
+  width: 64px; height: 64px;
+  border-radius: 10px;
+  background: var(--parchment);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.cart-item-info { flex: 1; min-width: 0; }
+.cart-item-name { font-size: .88rem; font-weight: 500; color: var(--charcoal); margin-bottom: .2rem; }
+.cart-item-variant { font-size: .75rem; color: var(--light); }
+.cart-item-price { font-size: .9rem; font-weight: 600; color: var(--charcoal); margin-top: .3rem; }
+.cart-item-qty {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  margin-top: .4rem;
+}
+.qty-btn {
+  width: 24px; height: 24px;
+  border-radius: 6px;
+  border: 1.5px solid var(--parchment);
+  background: none;
+  cursor: pointer;
+  font-size: .9rem;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--mid);
+  transition: border-color .2s;
+}
+.qty-btn:hover { border-color: var(--forest); color: var(--forest); }
+.qty-num { font-size: .85rem; font-weight: 500; min-width: 20px; text-align: center; }
+
+.cart-footer {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--parchment);
+}
+.cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+.cart-subtotal span:last-child { font-weight: 700; }
+.btn-checkout {
+  width: 100%;
+  background: var(--forest);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem;
+  font-family: var(--sans);
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s, transform .15s;
+}
+.btn-checkout:hover { background: var(--forest-mid); transform: translateY(-1px); }
+.cart-reassurance {
+  text-align: center;
+  font-size: .73rem;
+  color: var(--light);
+  margin-top: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .3rem;
+}
+
+/* ═══════════════════════════════════════════
+   TOAST
+═══════════════════════════════════════════ */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--forest);
+  color: #fff;
+  padding: .75rem 1.5rem;
+  border-radius: 100px;
+  font-size: .85rem;
+  font-weight: 500;
+  z-index: 999;
+  transition: transform .35s var(--ease);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  pointer-events: none;
+}
+.toast.show { transform: translateX(-50%) translateY(0); }
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
+@media (max-width: 1100px) {
+  .products-grid { grid-template-columns: repeat(3,1fr); }
+}
+@media (max-width: 960px) {
+  #hero { grid-template-columns: 1fr; }
+  .hero-left { padding: 5rem 2rem 3rem; }
+  .hero-right { height: 400px; }
+  .hero-right::after { background: linear-gradient(to top, var(--cream) 0%, transparent 30%); }
+  .hero-badge { bottom: 1.25rem; right: 1.25rem; }
+  .cat-grid { grid-template-columns: 1fr 1fr; }
+  .cat-card:nth-child(1) { grid-column: span 2; min-height: 280px; }
+  .products-grid { grid-template-columns: repeat(2,1fr); }
+  .abo-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .values-layout { grid-template-columns: 1fr; }
+  .values-img-stack { height: 320px; }
+  .reviews-grid { grid-template-columns: 1fr 1fr; }
+  .quiz-layout { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .nav-links { display: none; }
+  .nav-burger { display: flex; flex-direction: column; }
+  .proof-bar { gap: 1.5rem; }
+}
+@media (max-width: 600px) {
+  nav { padding: 0 max(1.25rem, env(safe-area-inset-right, 0)) 0 max(1.25rem, env(safe-area-inset-left, 0)); }
+  .section-wrap { padding: 0 max(1.25rem, env(safe-area-inset-right, 0)) 0 max(1.25rem, env(safe-area-inset-left, 0)); }
+  .hero-left { padding: 4rem 1.25rem 2.5rem; }
+  .hero-actions { flex-direction: column; }
+  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .hero-trust { flex-direction: column; gap: .75rem; }
+  .cat-grid { grid-template-columns: 1fr; }
+  .cat-card:nth-child(1) { grid-column: span 1; }
+  .products-grid { grid-template-columns: 1fr 1fr; gap: .75rem; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .values-pillars { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .values-badge { display: none; }
+  .logo-bar { gap: 1rem; overflow-x: auto; padding: 1rem 1.25rem; }
+  .proof-bar { padding: 1.25rem; justify-content: flex-start; gap: 1rem; overflow-x: auto; flex-wrap: nowrap; }
+}
+@media (max-width: 480px) {
+  .nav-actions { gap: .35rem; flex-wrap: nowrap; }
+  .btn-nav-cta { padding: .5rem .75rem; font-size: .76rem; }
+  .products-grid { grid-template-columns: 1fr; gap: 1rem; max-width: 22rem; margin-left: auto; margin-right: auto; }
+  .prod-card { max-width: 100%; }
+  .cat-header, .products-header, .reviews-header { flex-direction: column; align-items: flex-start; }
+  .filter-tabs { width: 100%; justify-content: flex-start; }
+  .toast {
+    left: 50%;
+    right: auto;
+    max-width: calc(100vw - 2rem - env(safe-area-inset-left, 0) - env(safe-area-inset-right, 0));
+    transform: translateX(-50%) translateY(120px);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+}
+@media (max-width: 380px) {
+  .lang-toggle-labels { display: none; }
+  .lang-toggle { padding: .45rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-eyebrow, .hero-h1, .hero-sub, .hero-actions, .hero-trust, .hero-badge, .hero-badge-num,
+  #hero .hero-right img {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .nav-drawer { transition: none; }
+  .nav-overlay { transition: none; }
+  .lang-toggle-knob { transition: none; }
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+  {"@type":"Organization","@id":"https://www.swissnatural.ch/#org","name":"Swiss Natural GmbH","url":"https://www.swissnatural.ch/","logo":{"@type":"ImageObject","url":"https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=512&q=80"},"description":"Getreidefreies Hunde- und Katzenfutter mit Schweizer Fleisch.","address":{"@type":"PostalAddress","addressCountry":"CH"},"sameAs":[]},
+  {"@type":"WebSite","@id":"https://www.swissnatural.ch/#website","url":"https://www.swissnatural.ch/","name":"Swiss Natural","publisher":{"@id":"https://www.swissnatural.ch/#org"},"inLanguage":["de-CH","en"]}
+]}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link" data-i18n="skip_main" onclick="setTimeout(function(){ var m=document.getElementById('main-content'); if(m) m.focus({preventScroll:true}); }, 0);">Zum Inhalt springen</a>
+
+<!-- ANNOUNCEMENT -->
+<div class="ann-bar" id="annBar">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+  <span id="annBarText" data-i18n-html="ann_html"><strong>NEU: Swiss Natural ABO</strong> — Bis zu 10% sparen &amp; nie wieder bestellen vergessen</span>
+  <button type="button" class="ann-close" data-i18n-aria="aria_ann_close" onclick="document.getElementById('annBar').remove()">×</button>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">
+      <!-- Paw / leaf combo mark -->
+      <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 3C8.5 3 5 6 5 10.5C5 14 7.5 17 11 18.5C14.5 17 17 14 17 10.5C17 6 13.5 3 11 3Z" fill="rgba(122,171,142,.3)" stroke="#7aab8e" stroke-width="1.2"/>
+        <circle cx="8" cy="9" r="1.2" fill="#fff"/>
+        <circle cx="14" cy="9" r="1.2" fill="#fff"/>
+        <path d="M8.5 13C9.2 14.2 12.8 14.2 13.5 13" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="nav-wordmark">
+      Swiss Natural
+      <span data-i18n="nav_tagline">Natürliches Tierfutter</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#categories" data-i18n="nav_dog">Hundefutter</a></li>
+    <li><a href="#categories" data-i18n="nav_cat">Katzenfutter</a></li>
+    <li><a href="#abo" data-i18n="nav_abo">ABO</a></li>
+    <li><a href="#values" data-i18n="nav_about">Über uns</a></li>
+    <li><a href="#" data-i18n="nav_faq">FAQ</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <span class="lang-toggle-track" aria-hidden="true"><span class="lang-toggle-knob"></span></span>
+      <span class="lang-toggle-labels" aria-hidden="true"><span class="lbl-de">DE</span><span class="lbl-en">EN</span></span>
+    </button>
+    <button class="nav-icon-btn" id="navSearchBtn" aria-label="Suche">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    </button>
+    <button class="nav-icon-btn" id="navAccountBtn" aria-label="Konto">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </button>
+    <button class="nav-icon-btn" id="cartBtn" aria-label="Warenkorb" onclick="toggleCart()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="cart-badge" id="cartCount">0</span>
+    </button>
+    <a href="#products" class="btn-nav-cta" data-i18n="nav_shop">Jetzt kaufen</a>
+    <button type="button" class="nav-burger" id="navBurger" onclick="toggleMobileMenu()" aria-label="Menü" aria-expanded="false" aria-controls="navDrawer" data-i18n-aria="aria_menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-overlay" id="navOverlay" onclick="closeMobileMenu()" aria-hidden="true"></div>
+<aside class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-labelledby="navDrawerTitle" aria-hidden="true" hidden>
+  <div class="nav-drawer-head">
+    <span class="nav-drawer-title" id="navDrawerTitle" data-i18n="nav_drawer_title">Menü</span>
+    <button type="button" class="nav-drawer-close" id="navDrawerClose" onclick="closeMobileMenu()" aria-label="Menü schließen" data-i18n-aria="aria_drawer_close">×</button>
+  </div>
+  <ul class="nav-drawer-links">
+    <li><a href="#categories" onclick="closeMobileMenu()" data-i18n="nav_dog">Hundefutter</a></li>
+    <li><a href="#categories" onclick="closeMobileMenu()" data-i18n="nav_cat">Katzenfutter</a></li>
+    <li><a href="#abo" onclick="closeMobileMenu()" data-i18n="nav_abo">ABO</a></li>
+    <li><a href="#values" onclick="closeMobileMenu()" data-i18n="nav_about">Über uns</a></li>
+    <li><a href="#" onclick="closeMobileMenu()" data-i18n="nav_faq">FAQ</a></li>
+    <li><a href="#products" onclick="closeMobileMenu()" data-i18n="nav_shop">Jetzt kaufen</a></li>
+  </ul>
+</aside>
+
+<main id="main-content" tabindex="-1">
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow" data-i18n="hero_eyebrow">Schweizer Qualität · Grain-Free</div>
+    <h1 class="hero-h1" data-i18n-html="hero_h1_html">
+      Echt gut ernährt.<br><em>Von Anfang an.</em>
+    </h1>
+    <p class="hero-sub" data-i18n="hero_sub">
+      Getreidefreies Hunde- und Katzenfutter mit echtem Fleisch aus der Schweiz. Sanft in der Verdauung — und ehrlich in den Zutaten.
+    </p>
+    <div class="hero-actions">
+      <a href="#products" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span data-i18n="hero_cta_shop">Zum Shop</span>
+      </a>
+      <a href="#quiz" class="btn-secondary">
+        <span data-i18n="hero_cta_quiz">Welches Futter passt?</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span data-i18n="hero_trust1">Schweizer Produktion</span>
+      </div>
+      <div class="trust-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <span data-i18n="hero_trust2">Getreidefrei</span>
+      </div>
+      <div class="trust-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span data-i18n="hero_trust3">Gratis Lieferung ab CHF 50</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img
+      src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&q=85"
+      alt="Glücklicher Hund"
+      data-i18n-alt="hero_img_alt"
+      loading="eager">
+    <div class="hero-badge">
+      <div class="hero-badge-num">4.9</div>
+      <div class="hero-badge-stars">★★★★★</div>
+      <div class="hero-badge-label" data-i18n-html="hero_badge_reviews">1,200+<br>Bewertungen</div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO / TRUST BAR -->
+<div class="logo-bar">
+  <span class="logo-bar-label" data-i18n="logo_bar_label">Vertrauen seit 2015</span>
+  <div class="logo-bar-divider"></div>
+  <div class="logo-bar-items">
+    <span class="logo-bar-item">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span data-i18n="logo_bar_1">100% Schweizer Fleisch</span>
+    </span>
+    <span class="logo-bar-item">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      <span data-i18n="logo_bar_2">Kein Getreide, keine Füllstoffe</span>
+    </span>
+    <span class="logo-bar-item">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <span data-i18n="logo_bar_3">Lieferung in 1–3 Werktagen</span>
+    </span>
+    <span class="logo-bar-item">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span data-i18n="logo_bar_4">Persönlicher Kundenservice</span>
+    </span>
+    <span class="logo-bar-item">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+      <span data-i18n="logo_bar_5">ABO bis 10% sparen</span>
+    </span>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<section id="categories">
+  <div class="section-wrap">
+    <div class="cat-header reveal">
+      <div>
+        <div class="section-label" data-i18n="cat_label">Unsere Kategorien</div>
+        <h2 class="section-h2" data-i18n-html="cat_h2_html">Für Hund <em>&amp; Katze</em></h2>
+      </div>
+      <a href="#products" class="btn-secondary" style="font-size:.82rem; padding:.6rem 1.25rem;" data-i18n="cat_see_all">Alle Produkte ansehen →</a>
+    </div>
+
+    <div class="cat-grid">
+      <a href="#products" class="cat-card reveal">
+        <img src="https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?w=800&q=80" alt="Hundefutter" data-i18n-alt="cat1_img_alt" loading="lazy">
+        <div class="cat-overlay"></div>
+        <div class="cat-info">
+          <div class="cat-tag" data-i18n="cat1_tag">Bestseller</div>
+          <div class="cat-name" data-i18n-html="cat1_name_html">Softes<br>Hundefutter</div>
+          <div class="cat-link">
+            <span data-i18n="cat1_link">Jetzt entdecken</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <a href="#products" class="cat-card reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1548366086-7f1b76106622?w=600&q=80" alt="Katzenfutter" data-i18n-alt="cat2_img_alt" loading="lazy">
+        <div class="cat-overlay"></div>
+        <div class="cat-info">
+          <div class="cat-tag" data-i18n="cat2_tag">Neu</div>
+          <div class="cat-name" data-i18n="cat2_name">Katzenfutter</div>
+          <div class="cat-link" data-i18n="cat_link_discover">Entdecken →</div>
+        </div>
+      </a>
+
+      <a href="#products" class="cat-card reveal delay-2">
+        <img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=600&q=80" alt="Snacks & Würste" data-i18n-alt="cat3_img_alt" loading="lazy">
+        <div class="cat-overlay"></div>
+        <div class="cat-info">
+          <div class="cat-tag" data-i18n="cat3_tag">Beliebt</div>
+          <div class="cat-name" data-i18n-html="cat3_name_html">Snacks &amp;<br>Würste</div>
+          <div class="cat-link" data-i18n="cat_link_discover">Entdecken →</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="section-wrap">
+    <div class="products-header reveal">
+      <div>
+        <div class="section-label" data-i18n="prod_label">Produkte</div>
+        <h2 class="section-h2" data-i18n-html="prod_h2_html">Meistverkaufte<br><em>Produkte</em></h2>
+      </div>
+      <div class="filter-tabs">
+        <button type="button" class="filter-tab active" onclick="filterProducts('all', this)" data-i18n="filter_all">Alle</button>
+        <button type="button" class="filter-tab" onclick="filterProducts('hund', this)" data-i18n="filter_dog">Hundefutter</button>
+        <button type="button" class="filter-tab" onclick="filterProducts('katze', this)" data-i18n="filter_cat">Katzenfutter</button>
+        <button type="button" class="filter-tab" onclick="filterProducts('snack', this)" data-i18n="filter_snack">Snacks</button>
+      </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <div class="prod-card reveal" data-cat="hund" data-name-de="Swiss Natural Adult Huhn" data-name-en="Swiss Natural Adult Chicken" data-price="CHF 8.90">
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=500&q=80" alt="Adult Hundefutter Huhn" data-i18n-alt="p1_img_alt" loading="lazy">
+          <span class="prod-badge gold" data-i18n="badge_bestseller">Bestseller</span>
+          <button class="prod-wishlist" onclick="wishlist(event)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="prod-info">
+          <div class="prod-category" data-i18n="p1_cat">Hundefutter · Adult</div>
+          <div class="prod-name" data-i18n="p1_name">Swiss Natural Adult Huhn</div>
+          <div class="prod-desc" data-i18n="p1_desc">Sanftes Alleinfutter mit 65% Schweizer Hühnerfleisch. Getreidefrei &amp; leicht verdaulich.</div>
+          <div class="prod-footer">
+            <div>
+              <span class="prod-price">CHF 8.90</span>
+              <div class="prod-rating">
+                <span class="stars">★★★★★</span>
+                <span>(312)</span>
+              </div>
+            </div>
+            <button type="button" class="prod-add-btn" onclick="addToCart(event)">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <span data-i18n="btn_add_cart">In den Korb</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-1" data-cat="hund" data-name-de="Swiss Natural Adult Rind" data-name-en="Swiss Natural Adult Beef" data-price="CHF 8.90">
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=500&q=80" alt="Adult Hundefutter Rind" data-i18n-alt="p2_img_alt" loading="lazy">
+          <span class="prod-badge" data-i18n="badge_new">Neu</span>
+          <button class="prod-wishlist" onclick="wishlist(event)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="prod-info">
+          <div class="prod-category" data-i18n="p2_cat">Hundefutter · Adult</div>
+          <div class="prod-name" data-i18n="p2_name">Swiss Natural Adult Rind</div>
+          <div class="prod-desc" data-i18n="p2_desc">Kräftiges Rinderfleisch aus Schweizer Landwirtschaft, ohne Getreide und Konservierungsstoffe.</div>
+          <div class="prod-footer">
+            <div>
+              <span class="prod-price">CHF 8.90</span>
+              <div class="prod-rating"><span class="stars">★★★★★</span> <span>(198)</span></div>
+            </div>
+            <button type="button" class="prod-add-btn" onclick="addToCart(event)">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <span data-i18n="btn_add_cart">In den Korb</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-2" data-cat="hund" data-name-de="Swiss Natural Junior" data-name-en="Swiss Natural Junior" data-price="CHF 9.20">
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?w=500&q=80" alt="Junior Hundefutter" data-i18n-alt="p3_img_alt" loading="lazy">
+          <button class="prod-wishlist" onclick="wishlist(event)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="prod-info">
+          <div class="prod-category" data-i18n="p3_cat">Hundefutter · Junior</div>
+          <div class="prod-name" data-i18n="p3_name">Swiss Natural Junior</div>
+          <div class="prod-desc" data-i18n="p3_desc">Speziell für Welpen und junge Hunde — sanft &amp; nährstoffreich für gesundes Wachstum.</div>
+          <div class="prod-footer">
+            <div>
+              <span class="prod-price">CHF 9.20</span>
+              <div class="prod-rating"><span class="stars">★★★★★</span> <span>(87)</span></div>
+            </div>
+            <button type="button" class="prod-add-btn" onclick="addToCart(event)">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <span data-i18n="btn_add_cart">In den Korb</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-3" data-cat="hund" data-name-de="Futterprobe Kennenlernset" data-name-en="Trial discovery set" data-price="CHF 12.90">
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=500&q=80" alt="Futterprobe Set" data-i18n-alt="p4_img_alt" loading="lazy">
+          <span class="prod-badge red" data-i18n="badge_trial">Probeset</span>
+          <button class="prod-wishlist" onclick="wishlist(event)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="prod-info">
+          <div class="prod-category" data-i18n="p4_cat">Hundefutter · Probe</div>
+          <div class="prod-name" data-i18n="p4_name">Futterprobe Kennenlernset</div>
+          <div class="prod-desc" data-i18n="p4_desc">5 verschiedene Sorten zum Ausprobieren. Perfekt für unentschlossene Vierbeiner.</div>
+          <div class="prod-footer">
+            <div>
+              <span class="prod-price">CHF 12.90</span>
+              <span class="prod-price-old">CHF 17.50</span>
+              <div class="prod-rating"><span class="stars">★★★★★</span> <span>(445)</span></div>
+            </div>
+            <button type="button" class="prod-add-btn" onclick="addToCart(event)">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <span data-i18n="btn_add_cart">In den Korb</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal" data-cat="katze" data-name-de="Swiss Natural Katze Huhn" data-name-en="Swiss Natural Cat Chicken" data-price="CHF 7.50">
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500&q=80" alt="Katzenfutter" data-i18n-alt="p5_img_alt" loading="lazy">
+          <span class="prod-badge" data-i18n="badge_new">Neu</span>
+          <button class="prod-wishlist" onclick="wishlist(event)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="prod-info">
+          <div class="prod-category" data-i18n="p5_cat">Katzenfutter · Adult</div>
+          <div class="prod-name" data-i18n="p5_name">Swiss Natural Katze Huhn</div>
+          <div class="prod-desc" data-i18n="p5_desc">Feuchtes Alleinfutter für Katzen mit Schweizer Hühnerfleisch. Reich an Protein, getreidefrei.</div>
+          <div class="prod-footer">
+            <div>
+              <span class="prod-price">CHF 7.50</span>
+              <div class="prod-rating"><span class="stars">★★★★☆</span> <span>(64)</span></div>
+            </div>
+            <button type="button" class="prod-add-btn" onclick="addToCart(event)">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <span data-i18n="btn_add_cart">In den Korb</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-1" data-cat="snack" data-name-de="Bettmümpfeli Huhn" data-name-en="Chicken training bites" data-price="CHF 7.90">
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4a?w=500&q=80" alt="Snacks Bettmümpfeli" data-i18n-alt="p6_img_alt" loading="lazy">
+          <span class="prod-badge gold" data-i18n="badge_topseller">⭐ Topseller</span>
+          <button class="prod-wishlist" onclick="wishlist(event)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="prod-info">
+          <div class="prod-category" data-i18n="p6_cat">Snacks · Belohnung</div>
+          <div class="prod-name" data-i18n="p6_name">Bettmümpfeli Huhn</div>
+          <div class="prod-desc" data-i18n="p6_desc">Knusprige Guetsli aus Schweizer Hühnerfleisch. Ideal als Belohnung beim Training.</div>
+          <div class="prod-footer">
+            <div>
+              <span class="prod-price">CHF 7.90</span>
+              <div class="prod-rating"><span class="stars">★★★★★</span> <span>(521)</span></div>
+            </div>
+            <button type="button" class="prod-add-btn" onclick="addToCart(event)">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <span data-i18n="btn_add_cart">In den Korb</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-2" data-cat="hund" data-name-de="Swiss Natural Senior" data-name-en="Swiss Natural Senior" data-price="CHF 9.20">
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?w=500&q=80" alt="Senior Hundefutter" data-i18n-alt="p7_img_alt" loading="lazy">
+          <button class="prod-wishlist" onclick="wishlist(event)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="prod-info">
+          <div class="prod-category" data-i18n="p7_cat">Hundefutter · Senior</div>
+          <div class="prod-name" data-i18n="p7_name">Swiss Natural Senior</div>
+          <div class="prod-desc" data-i18n="p7_desc">Angepasste Nährstoffzusammensetzung für ältere Hunde. Schont Gelenke und Verdauung.</div>
+          <div class="prod-footer">
+            <div>
+              <span class="prod-price">CHF 9.20</span>
+              <div class="prod-rating"><span class="stars">★★★★★</span> <span>(143)</span></div>
+            </div>
+            <button type="button" class="prod-add-btn" onclick="addToCart(event)">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <span data-i18n="btn_add_cart">In den Korb</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-3" data-cat="snack" data-name-de="Schweinswürstli" data-name-en="Pork mini sausages" data-price="CHF 6.50">
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&q=80" alt="Würste" data-i18n-alt="p8_img_alt" loading="lazy">
+          <button class="prod-wishlist" onclick="wishlist(event)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="prod-info">
+          <div class="prod-category" data-i18n="p8_cat">Snacks · Würste</div>
+          <div class="prod-name" data-i18n="p8_name">Schweinswürstli</div>
+          <div class="prod-desc" data-i18n="p8_desc">Saftige Mini-Würstchen aus Schweizer Schweinefleisch — der absolute Liebling aller Hunde.</div>
+          <div class="prod-footer">
+            <div>
+              <span class="prod-price">CHF 6.50</span>
+              <div class="prod-rating"><span class="stars">★★★★★</span> <span>(278)</span></div>
+            </div>
+            <button type="button" class="prod-add-btn" onclick="addToCart(event)">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <span data-i18n="btn_add_cart">In den Korb</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABO -->
+<section id="abo">
+  <div class="section-wrap">
+    <div class="abo-layout">
+      <div class="abo-content reveal">
+        <div class="section-label" data-i18n="abo_label">Swiss Natural ABO</div>
+        <h2 class="section-h2" data-i18n-html="abo_h2_html">Nie wieder<br><em>nachbestellen.</em></h2>
+        <p class="section-body" data-i18n="abo_body">
+          Stell dein persönliches Abo zusammen, und dein Hund freut sich jedes Mal auf neue Lieferung — ohne dass du daran denken musst.
+        </p>
+        <div class="abo-perks">
+          <div class="abo-perk">
+            <div class="abo-perk-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span data-i18n="abo_perk1">Bis 10% auf jeden Abo-Einkauf sparen</span>
+          </div>
+          <div class="abo-perk">
+            <div class="abo-perk-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span data-i18n="abo_perk2">Lieferintervall jederzeit anpassbar</span>
+          </div>
+          <div class="abo-perk">
+            <div class="abo-perk-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span data-i18n="abo_perk3">Kostenloser Versand für alle Abo-Bestellungen</span>
+          </div>
+          <div class="abo-perk">
+            <div class="abo-perk-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span data-i18n="abo_perk4">Jederzeit kündbar — kein Risiko</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="abo-card reveal delay-2">
+        <div class="abo-card-tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span data-i18n="abo_card_tag">Beliebtestes Abo</span>
+        </div>
+        <div class="abo-price-row">
+          <div class="abo-price-big">–10%</div>
+          <div class="abo-price-label" data-i18n-html="abo_price_lbl_html">auf jede<br>Lieferung</div>
+          <div class="abo-save-badge" data-i18n="abo_save_badge">Spare CHF!</div>
+        </div>
+        <ul class="abo-features">
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="abo_f1">Wähle deine Sorten selbst</span>
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="abo_f2">Lieferung alle 2 / 4 / 8 Wochen</span>
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="abo_f3">Kostenloser Versand inklusive</span>
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="abo_f4">Kündigung jederzeit möglich</span>
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="abo_f5">Lieferpause einfach per App</span>
+          </li>
+        </ul>
+        <button type="button" class="btn-abo" data-i18n="abo_cta">Jetzt ABO starten →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section id="values">
+  <div class="section-wrap">
+    <div class="values-layout">
+      <div class="values-img-stack reveal">
+        <img class="values-img-main"
+          src="https://images.unsplash.com/photo-1472746729193-28eb80cfa77b?w=700&q=80"
+          alt="Schweizer Wiesen" data-i18n-alt="val_img1_alt" loading="lazy">
+        <img class="values-img-accent"
+          src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?w=500&q=80"
+          alt="Hund im Grünen" data-i18n-alt="val_img2_alt" loading="lazy">
+        <div class="values-badge">
+          <div class="values-badge-big">100%</div>
+          <div class="values-badge-label" data-i18n-html="val_badge_html">Schweizer<br>Fleisch</div>
+        </div>
+      </div>
+
+      <div class="values-content reveal delay-1">
+        <div class="section-label" data-i18n="val_label">Warum Swiss Natural</div>
+        <h2 class="section-h2" data-i18n-html="val_h2_html">Ehrliche Zutaten.<br><em>Kein Kompromiss.</em></h2>
+        <p class="section-body" data-i18n="val_body">
+          Wir produzieren in der Schweiz, kaufen lokal ein und verzichten komplett auf Getreide, Füllstoffe und unnötige Zusatzstoffe. Was drinsteht, ist auch drin.
+        </p>
+
+        <div class="values-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="pillar-title" data-i18n="val_p1_t">Schweizer Produktion</div>
+            <div class="pillar-body" data-i18n="val_p1_b">Alles wird in der Schweiz hergestellt — kurze Wege, hohe Standards.</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="pillar-title" data-i18n="val_p2_t">Regionales Fleisch</div>
+            <div class="pillar-body" data-i18n="val_p2_b">Direkt von Schweizer Bauernhöfen — Huhn, Rind und Schwein aus verantwortungsvoller Haltung.</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+            </div>
+            <div class="pillar-title" data-i18n="val_p3_t">Getreidefrei</div>
+            <div class="pillar-body" data-i18n="val_p3_b">Kein Weizen, keine Füllstoffe — für eine gesunde Verdauung und glänzendes Fell.</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12"/><path d="M1 1l22 22"/></svg>
+            </div>
+            <div class="pillar-title" data-i18n="val_p4_t">Persönlicher Service</div>
+            <div class="pillar-body" data-i18n="val_p4_b">Fragen? Unser Team antwortet schnell und ehrlich — ohne Call-Center-Skript.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="section-wrap">
+    <div class="reviews-header reveal">
+      <div>
+        <div class="section-label" data-i18n="rev_label">Kundenstimmen</div>
+        <h2 class="section-h2" data-i18n-html="rev_h2_html">Was Tierliebhaber<br><em>sagen</em></h2>
+      </div>
+      <div class="reviews-aggregate">
+        <div class="agg-big">4.9</div>
+        <div class="agg-right">
+          <div class="agg-stars">★★★★★</div>
+          <div class="agg-label" data-i18n="rev_agg1">aus 1'200+ Bewertungen</div>
+          <div class="agg-label" style="font-size:.7rem; color:#c4953a;" data-i18n="rev_agg2">Verifizierte Käufer</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="rev1_text">"Unser Berner Sennenhund hatte vorher immer Magenprobleme. Seit wir auf Swiss Natural umgestellt haben, ist alles viel besser. Wir bleiben dabei!"</p>
+        <div class="review-author">
+          <div class="review-avatar">SM</div>
+          <div>
+            <div class="review-name">Sandra M.</div>
+            <div class="review-date" data-i18n="rev1_date">Zürich · März 2025</div>
+          </div>
+          <span class="review-tag" data-i18n="rev1_tag">Adult Huhn</span>
+        </div>
+      </div>
+
+      <div class="review-card reveal delay-1">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="rev2_text">"Die Futterprobe war genial — meine zwei Hunde haben jetzt ihre Lieblingssorten gefunden. Toller Service, schnelle Lieferung. Sehr empfehlenswert."</p>
+        <div class="review-author">
+          <div class="review-avatar">TR</div>
+          <div>
+            <div class="review-name">Thomas R.</div>
+            <div class="review-date" data-i18n="rev2_date">Bern · Januar 2025</div>
+          </div>
+          <span class="review-tag" data-i18n="rev2_tag">Futterprobe</span>
+        </div>
+      </div>
+
+      <div class="review-card reveal delay-2">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="rev3_text">"Das Abo ist einfach super praktisch. Ich merke kaum noch, dass ich bestellen muss — die Lieferung kommt pünktlich und mein Hund freut sich jedes Mal riesig."</p>
+        <div class="review-author">
+          <div class="review-avatar">LK</div>
+          <div>
+            <div class="review-name">Laura K.</div>
+            <div class="review-date" data-i18n="rev3_date">Basel · Februar 2025</div>
+          </div>
+          <span class="review-tag" data-i18n="rev3_tag">ABO Kunde</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ / FUNNEL -->
+<section id="quiz">
+  <div class="section-wrap">
+    <div class="quiz-layout">
+      <div class="quiz-copy reveal">
+        <div class="section-label" data-i18n="quiz_label">Futter-Finder</div>
+        <h2 class="section-h2" data-i18n-html="quiz_h2_html">Welches Futter<br><em>passt zu meinem Tier?</em></h2>
+        <p class="section-body" data-i18n="quiz_intro">
+          Beantworte 3 kurze Fragen — und wir empfehlen dir das passende Swiss Natural Produkt für deinen Vierbeiner.
+        </p>
+        <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: .6rem; font-size: .82rem; color: var(--mid);">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span data-i18n="quiz_time">Dauert unter 60 Sekunden</span>
+        </div>
+      </div>
+
+      <div class="quiz-widget reveal delay-1">
+        <div class="quiz-progress"><div class="quiz-progress-bar" id="quizBar" style="width:33%"></div></div>
+
+        <!-- Step 1 -->
+        <div class="quiz-step active" id="qs1">
+          <div class="quiz-step-label" data-i18n="quiz_s1_lbl">Frage 1 von 3</div>
+          <div class="quiz-question" data-i18n="quiz_q1">Für welches Tier suchst du Futter?</div>
+          <div class="quiz-options">
+            <button type="button" class="quiz-option" onclick="quizSelect(this,1,'hund')">
+              <span class="quiz-option-icon">🐶</span> <span data-i18n="quiz_opt_dog">Hund</span>
+            </button>
+            <button type="button" class="quiz-option" onclick="quizSelect(this,1,'katze')">
+              <span class="quiz-option-icon">🐱</span> <span data-i18n="quiz_opt_cat">Katze</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="quiz-step" id="qs2">
+          <div class="quiz-step-label" data-i18n="quiz_s2_lbl">Frage 2 von 3</div>
+          <div class="quiz-question" data-i18n="quiz_q2">Wie alt ist dein Tier?</div>
+          <div class="quiz-options">
+            <button type="button" class="quiz-option" onclick="quizSelect(this,2,'jung')">
+              <span class="quiz-option-icon">🐾</span> <span data-i18n="quiz_opt_young">Welpe / Jungtier (unter 1 Jahr)</span>
+            </button>
+            <button type="button" class="quiz-option" onclick="quizSelect(this,2,'adult')">
+              <span class="quiz-option-icon">🦴</span> <span data-i18n="quiz_opt_adult">Erwachsen (1–8 Jahre)</span>
+            </button>
+            <button type="button" class="quiz-option" onclick="quizSelect(this,2,'senior')">
+              <span class="quiz-option-icon">🏡</span> <span data-i18n="quiz_opt_senior">Senior (8+ Jahre)</span>
+            </button>
+          </div>
+          <div class="quiz-nav">
+            <button type="button" class="quiz-back" onclick="quizBack(1)" data-i18n="quiz_back">← Zurück</button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="quiz-step" id="qs3">
+          <div class="quiz-step-label" data-i18n="quiz_s3_lbl">Frage 3 von 3</div>
+          <div class="quiz-question" data-i18n="quiz_q3">Hat dein Tier spezielle Bedürfnisse?</div>
+          <div class="quiz-options">
+            <button type="button" class="quiz-option" onclick="quizSelect(this,3,'sensitiv')">
+              <span class="quiz-option-icon">💚</span> <span data-i18n="quiz_opt_sens">Empfindlicher Magen</span>
+            </button>
+            <button type="button" class="quiz-option" onclick="quizSelect(this,3,'aktiv')">
+              <span class="quiz-option-icon">⚡</span> <span data-i18n="quiz_opt_active">Sehr aktiv / Sport</span>
+            </button>
+            <button type="button" class="quiz-option" onclick="quizSelect(this,3,'normal')">
+              <span class="quiz-option-icon">😊</span> <span data-i18n="quiz_opt_norm">Alles normal</span>
+            </button>
+          </div>
+          <div class="quiz-nav">
+            <button type="button" class="quiz-back" onclick="quizBack(2)" data-i18n="quiz_back">← Zurück</button>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="quiz-step" id="qsResult">
+          <div class="quiz-result">
+            <div style="font-size: 2.5rem; margin-bottom: .75rem;">🎉</div>
+            <div class="quiz-result-title" data-i18n="quiz_res_title">Deine Empfehlung:</div>
+            <div class="quiz-result-body" id="quizResultText">
+              Basierend auf deinen Angaben empfehlen wir dir das <strong>Swiss Natural Adult Huhn</strong> — sanft, getreidefrei und perfekt für einen gesunden Alltag.
+            </div>
+            <a href="#products" class="btn-primary" style="width:100%; justify-content:center; margin-bottom:.75rem;" id="quizResultCta" onclick="addToCartFromQuiz(event)">
+              <span data-i18n="quiz_cta_try">Jetzt ausprobieren →</span>
+            </a>
+            <button type="button" onclick="quizReset()" style="background:none;border:none;font-size:.8rem;color:var(--light);cursor:pointer;" data-i18n="quiz_restart">
+              Neu starten
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<div class="proof-bar">
+  <div class="proof-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    <span data-i18n-html="proof1_html"><strong>18'000+</strong> zufriedene Kunden</span>
+  </div>
+  <div class="proof-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 5.29 5.29l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+    <span data-i18n-html="proof2_html">Kundendienst <strong>Mo–Fr 8–17 Uhr</strong></span>
+  </div>
+  <div class="proof-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+    <span data-i18n-html="proof3_html">Versand in <strong>1–3 Werktagen</strong></span>
+  </div>
+  <div class="proof-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+    <span data-i18n-html="proof4_html">Gratis Lieferung <strong>ab CHF 50</strong></span>
+  </div>
+  <div class="proof-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <span data-i18n-html="proof5_html"><strong>100%</strong> Schweizer Produktion</span>
+  </div>
+</div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="section-wrap">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-mark">
+            <svg viewBox="0 0 22 22" fill="none"><path d="M11 3C8.5 3 5 6 5 10.5C5 14 7.5 17 11 18.5C14.5 17 17 14 17 10.5C17 6 13.5 3 11 3Z" fill="rgba(122,171,142,.3)" stroke="#7aab8e" stroke-width="1.2"/><circle cx="8" cy="9" r="1.2" fill="#fff"/><circle cx="14" cy="9" r="1.2" fill="#fff"/><path d="M8.5 13C9.2 14.2 12.8 14.2 13.5 13" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="nav-wordmark">Swiss Natural<span data-i18n="nav_tagline">Natürliches Tierfutter</span></div>
+        </a>
+        <p class="footer-tagline" data-i18n="foot_tagline">"Kein Getreide. Kein Kompromiss. Nur das Beste für deinen Vierbeiner."</p>
+        <div class="footer-socials">
+          <button class="footer-social-btn" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </button>
+          <button class="footer-social-btn" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </button>
+          <button class="footer-social-btn" aria-label="TikTok">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z" opacity=".6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="foot_h_prod">Produkte</h4>
+        <ul>
+          <li><a href="#" data-i18n="foot_l1">Hundefutter Adult</a></li>
+          <li><a href="#" data-i18n="foot_l2">Hundefutter Junior</a></li>
+          <li><a href="#" data-i18n="foot_l3">Hundefutter Senior</a></li>
+          <li><a href="#" data-i18n="foot_l4">Katzenfutter</a></li>
+          <li><a href="#" data-i18n="foot_l5">Snacks & Belohnung</a></li>
+          <li><a href="#" data-i18n="foot_l6">Würste</a></li>
+          <li><a href="#" data-i18n="foot_l7">Futterprobe bestellen</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="foot_h_svc">Service</h4>
+        <ul>
+          <li><a href="#" data-i18n="foot_s1">ABO verwalten</a></li>
+          <li><a href="#" data-i18n="foot_s2">FAQ</a></li>
+          <li><a href="#" data-i18n="foot_s3">Kontakt</a></li>
+          <li><a href="#" data-i18n="foot_s4">Reklamationen</a></li>
+          <li><a href="#" data-i18n="foot_s5">Verkaufsstellen</a></li>
+          <li><a href="#" data-i18n="foot_s6">Über uns</a></li>
+          <li><a href="#" data-i18n="foot_s7">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="foot_h_news">Newsletter</h4>
+        <p style="font-size:.82rem; color:rgba(255,255,255,.4); margin-bottom:.85rem; line-height:1.55;" data-i18n="foot_news_p">Tipps, Angebote &amp; neue Produkte — direkt in dein Postfach.</p>
+        <div class="footer-newsletter">
+          <input type="email" data-i18n-placeholder="foot_email_ph" placeholder="Deine E-Mail">
+          <button type="button" data-i18n="foot_ok">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span data-i18n="foot_copy">© 2026 Swiss Natural GmbH · Alle Rechte vorbehalten</span>
+    <div class="footer-payments">
+      <span class="pay-badge">VISA</span>
+      <span class="pay-badge">MC</span>
+      <span class="pay-badge">TWINT</span>
+      <span class="pay-badge">PayPal</span>
+      <span class="pay-badge" data-i18n="foot_pay_inv">Rechnung</span>
+    </div>
+    <div style="display:flex; gap:1.25rem;">
+      <a href="#" style="color:rgba(255,255,255,.35); text-decoration:none; font-size:.75rem; transition:color .2s;" data-i18n="foot_privacy">Datenschutz</a>
+      <a href="#" style="color:rgba(255,255,255,.35); text-decoration:none; font-size:.75rem; transition:color .2s;" data-i18n="foot_terms">AGB</a>
+      <a href="#" style="color:rgba(255,255,255,.35); text-decoration:none; font-size:.75rem; transition:color .2s;" data-i18n="foot_imprint">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <div class="cart-title" data-i18n="cart_title">Warenkorb</div>
+    <button type="button" class="cart-close" onclick="toggleCart()" data-i18n-aria="aria_cart_close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty" id="cartEmpty">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <p data-i18n="cart_empty">Dein Warenkorb ist leer</p>
+    </div>
+    <div id="cartItems"></div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none;">
+    <div class="cart-subtotal">
+      <span data-i18n="cart_sub">Zwischensumme</span>
+      <span id="cartTotal">CHF 0.00</span>
+    </div>
+    <button type="button" class="btn-checkout" data-i18n="cart_checkout">Zur Kasse →</button>
+    <div class="cart-reassurance">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span data-i18n="cart_reassure">Sichere Bezahlung · Gratis Versand ab CHF 50</span>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+  <span id="toastMsg" data-i18n="toast_default">In den Warenkorb gelegt!</span>
+</div>
+
+<script>
+/* ─── I18N ─── */
+const STR = {
+  de: {
+    meta_title: 'Swiss Natural — Getreidefreies Hundefutter aus der Schweiz',
+    meta_desc: 'Sanftes, getreidefreies Hundefutter mit echtem Schweizer Fleisch. Kein Getreide, keine Kompromisse. Jetzt Abo sparen bis 10%.',
+    og_title: 'Swiss Natural — Natürliches Futter für treue Begleiter',
+    ann_html: '<strong>NEU: Swiss Natural ABO</strong> — Bis zu 10% sparen &amp; nie wieder bestellen vergessen',
+    aria_ann_close: 'Schließen',
+    nav_tagline: 'Natürliches Tierfutter',
+    nav_dog: 'Hundefutter',
+    nav_cat: 'Katzenfutter',
+    nav_abo: 'ABO',
+    nav_about: 'Über uns',
+    nav_faq: 'FAQ',
+    nav_shop: 'Jetzt kaufen',
+    aria_search: 'Suche',
+    aria_account: 'Konto',
+    aria_cart: 'Warenkorb',
+    aria_menu: 'Menü',
+    aria_lang_to_en: 'Zu Englisch wechseln',
+    aria_lang_to_de: 'Zu Deutsch wechseln',
+    nav_drawer_title: 'Menü',
+    aria_drawer_close: 'Menü schließen',
+    og_image_alt: 'Glücklicher Hund — Swiss Natural Tierfutter',
+    skip_main: 'Zum Inhalt springen',
+    hero_eyebrow: 'Schweizer Qualität · Grain-Free',
+    hero_h1_html: 'Echt gut ernährt.<br><em>Von Anfang an.</em>',
+    hero_sub: 'Getreidefreies Hunde- und Katzenfutter mit echtem Fleisch aus der Schweiz. Sanft in der Verdauung — und ehrlich in den Zutaten.',
+    hero_cta_shop: 'Zum Shop',
+    hero_cta_quiz: 'Welches Futter passt?',
+    hero_trust1: 'Schweizer Produktion',
+    hero_trust2: 'Getreidefrei',
+    hero_trust3: 'Gratis Lieferung ab CHF 50',
+    hero_img_alt: 'Glücklicher Hund',
+    hero_badge_reviews: "1,200+<br>Bewertungen",
+    logo_bar_label: 'Vertrauen seit 2015',
+    logo_bar_1: '100% Schweizer Fleisch',
+    logo_bar_2: 'Kein Getreide, keine Füllstoffe',
+    logo_bar_3: 'Lieferung in 1–3 Werktagen',
+    logo_bar_4: 'Persönlicher Kundenservice',
+    logo_bar_5: 'ABO bis 10% sparen',
+    cat_label: 'Unsere Kategorien',
+    cat_h2_html: 'Für Hund <em>&amp; Katze</em>',
+    cat_see_all: 'Alle Produkte ansehen →',
+    cat1_img_alt: 'Hundefutter',
+    cat1_tag: 'Bestseller',
+    cat1_name_html: 'Softes<br>Hundefutter',
+    cat1_link: 'Jetzt entdecken',
+    cat2_img_alt: 'Katzenfutter',
+    cat2_tag: 'Neu',
+    cat2_name: 'Katzenfutter',
+    cat3_img_alt: 'Snacks & Würste',
+    cat3_tag: 'Beliebt',
+    cat3_name_html: 'Snacks &amp;<br>Würste',
+    cat_link_discover: 'Entdecken →',
+    prod_label: 'Produkte',
+    prod_h2_html: 'Meistverkaufte<br><em>Produkte</em>',
+    filter_all: 'Alle',
+    filter_dog: 'Hundefutter',
+    filter_cat: 'Katzenfutter',
+    filter_snack: 'Snacks',
+    badge_bestseller: 'Bestseller',
+    badge_new: 'Neu',
+    badge_trial: 'Probeset',
+    badge_topseller: '⭐ Topseller',
+    p1_cat: 'Hundefutter · Adult',
+    p1_name: 'Swiss Natural Adult Huhn',
+    p1_desc: 'Sanftes Alleinfutter mit 65% Schweizer Hühnerfleisch. Getreidefrei & leicht verdaulich.',
+    p1_img_alt: 'Adult Hundefutter Huhn',
+    p2_cat: 'Hundefutter · Adult',
+    p2_name: 'Swiss Natural Adult Rind',
+    p2_desc: 'Kräftiges Rinderfleisch aus Schweizer Landwirtschaft, ohne Getreide und Konservierungsstoffe.',
+    p2_img_alt: 'Adult Hundefutter Rind',
+    p3_cat: 'Hundefutter · Junior',
+    p3_name: 'Swiss Natural Junior',
+    p3_desc: 'Speziell für Welpen und junge Hunde — sanft & nährstoffreich für gesundes Wachstum.',
+    p3_img_alt: 'Junior Hundefutter',
+    p4_cat: 'Hundefutter · Probe',
+    p4_name: 'Futterprobe Kennenlernset',
+    p4_desc: '5 verschiedene Sorten zum Ausprobieren. Perfekt für unentschlossene Vierbeiner.',
+    p4_img_alt: 'Futterprobe Set',
+    p5_cat: 'Katzenfutter · Adult',
+    p5_name: 'Swiss Natural Katze Huhn',
+    p5_desc: 'Feuchtes Alleinfutter für Katzen mit Schweizer Hühnerfleisch. Reich an Protein, getreidefrei.',
+    p5_img_alt: 'Katzenfutter',
+    p6_cat: 'Snacks · Belohnung',
+    p6_name: 'Bettmümpfeli Huhn',
+    p6_desc: 'Knusprige Guetsli aus Schweizer Hühnerfleisch. Ideal als Belohnung beim Training.',
+    p6_img_alt: 'Snacks Bettmümpfeli',
+    p7_cat: 'Hundefutter · Senior',
+    p7_name: 'Swiss Natural Senior',
+    p7_desc: 'Angepasste Nährstoffzusammensetzung für ältere Hunde. Schont Gelenke und Verdauung.',
+    p7_img_alt: 'Senior Hundefutter',
+    p8_cat: 'Snacks · Würste',
+    p8_name: 'Schweinswürstli',
+    p8_desc: 'Saftige Mini-Würstchen aus Schweizer Schweinefleisch — der absolute Liebling aller Hunde.',
+    p8_img_alt: 'Würste',
+    btn_add_cart: 'In den Korb',
+    abo_label: 'Swiss Natural ABO',
+    abo_h2_html: 'Nie wieder<br><em>nachbestellen.</em>',
+    abo_body: 'Stell dein persönliches Abo zusammen, und dein Hund freut sich jedes Mal auf neue Lieferung — ohne dass du daran denken musst.',
+    abo_perk1: 'Bis 10% auf jeden Abo-Einkauf sparen',
+    abo_perk2: 'Lieferintervall jederzeit anpassbar',
+    abo_perk3: 'Kostenloser Versand für alle Abo-Bestellungen',
+    abo_perk4: 'Jederzeit kündbar — kein Risiko',
+    abo_card_tag: 'Beliebtestes Abo',
+    abo_price_lbl_html: 'auf jede<br>Lieferung',
+    abo_save_badge: 'Spare CHF!',
+    abo_f1: 'Wähle deine Sorten selbst',
+    abo_f2: 'Lieferung alle 2 / 4 / 8 Wochen',
+    abo_f3: 'Kostenloser Versand inklusive',
+    abo_f4: 'Kündigung jederzeit möglich',
+    abo_f5: 'Lieferpause einfach per App',
+    abo_cta: 'Jetzt ABO starten →',
+    val_img1_alt: 'Schweizer Wiesen',
+    val_img2_alt: 'Hund im Grünen',
+    val_badge_html: 'Schweizer<br>Fleisch',
+    val_label: 'Warum Swiss Natural',
+    val_h2_html: 'Ehrliche Zutaten.<br><em>Kein Kompromiss.</em>',
+    val_body: 'Wir produzieren in der Schweiz, kaufen lokal ein und verzichten komplett auf Getreide, Füllstoffe und unnötige Zusatzstoffe. Was drinsteht, ist auch drin.',
+    val_p1_t: 'Schweizer Produktion',
+    val_p1_b: 'Alles wird in der Schweiz hergestellt — kurze Wege, hohe Standards.',
+    val_p2_t: 'Regionales Fleisch',
+    val_p2_b: 'Direkt von Schweizer Bauernhöfen — Huhn, Rind und Schwein aus verantwortungsvoller Haltung.',
+    val_p3_t: 'Getreidefrei',
+    val_p3_b: 'Kein Weizen, keine Füllstoffe — für eine gesunde Verdauung und glänzendes Fell.',
+    val_p4_t: 'Persönlicher Service',
+    val_p4_b: 'Fragen? Unser Team antwortet schnell und ehrlich — ohne Call-Center-Skript.',
+    rev_label: 'Kundenstimmen',
+    rev_h2_html: 'Was Tierliebhaber<br><em>sagen</em>',
+    rev_agg1: "aus 1'200+ Bewertungen",
+    rev_agg2: 'Verifizierte Käufer',
+    rev1_text: '"Unser Berner Sennenhund hatte vorher immer Magenprobleme. Seit wir auf Swiss Natural umgestellt haben, ist alles viel besser. Wir bleiben dabei!"',
+    rev1_date: 'Zürich · März 2025',
+    rev1_tag: 'Adult Huhn',
+    rev2_text: '"Die Futterprobe war genial — meine zwei Hunde haben jetzt ihre Lieblingssorten gefunden. Toller Service, schnelle Lieferung. Sehr empfehlenswert."',
+    rev2_date: 'Bern · Januar 2025',
+    rev2_tag: 'Futterprobe',
+    rev3_text: '"Das Abo ist einfach super praktisch. Ich merke kaum noch, dass ich bestellen muss — die Lieferung kommt pünktlich und mein Hund freut sich jedes Mal riesig."',
+    rev3_date: 'Basel · Februar 2025',
+    rev3_tag: 'ABO Kunde',
+    quiz_label: 'Futter-Finder',
+    quiz_h2_html: 'Welches Futter<br><em>passt zu meinem Tier?</em>',
+    quiz_intro: 'Beantworte 3 kurze Fragen — und wir empfehlen dir das passende Swiss Natural Produkt für deinen Vierbeiner.',
+    quiz_time: 'Dauert unter 60 Sekunden',
+    quiz_s1_lbl: 'Frage 1 von 3',
+    quiz_q1: 'Für welches Tier suchst du Futter?',
+    quiz_opt_dog: 'Hund',
+    quiz_opt_cat: 'Katze',
+    quiz_s2_lbl: 'Frage 2 von 3',
+    quiz_q2: 'Wie alt ist dein Tier?',
+    quiz_opt_young: 'Welpe / Jungtier (unter 1 Jahr)',
+    quiz_opt_adult: 'Erwachsen (1–8 Jahre)',
+    quiz_opt_senior: 'Senior (8+ Jahre)',
+    quiz_back: '← Zurück',
+    quiz_s3_lbl: 'Frage 3 von 3',
+    quiz_q3: 'Hat dein Tier spezielle Bedürfnisse?',
+    quiz_opt_sens: 'Empfindlicher Magen',
+    quiz_opt_active: 'Sehr aktiv / Sport',
+    quiz_opt_norm: 'Alles normal',
+    quiz_res_title: 'Deine Empfehlung:',
+    quiz_result_intro: 'Basierend auf deinen Angaben empfehlen wir: <strong>{result}</strong>',
+    quiz_cta_try: 'Jetzt ausprobieren →',
+    quiz_restart: 'Neu starten',
+    proof1_html: "<strong>18'000+</strong> zufriedene Kunden",
+    proof2_html: 'Kundendienst <strong>Mo–Fr 8–17 Uhr</strong>',
+    proof3_html: 'Versand in <strong>1–3 Werktagen</strong>',
+    proof4_html: 'Gratis Lieferung <strong>ab CHF 50</strong>',
+    proof5_html: '<strong>100%</strong> Schweizer Produktion',
+    foot_tagline: '"Kein Getreide. Kein Kompromiss. Nur das Beste für deinen Vierbeiner."',
+    foot_h_prod: 'Produkte',
+    foot_l1: 'Hundefutter Adult',
+    foot_l2: 'Hundefutter Junior',
+    foot_l3: 'Hundefutter Senior',
+    foot_l4: 'Katzenfutter',
+    foot_l5: 'Snacks & Belohnung',
+    foot_l6: 'Würste',
+    foot_l7: 'Futterprobe bestellen',
+    foot_h_svc: 'Service',
+    foot_s1: 'ABO verwalten',
+    foot_s2: 'FAQ',
+    foot_s3: 'Kontakt',
+    foot_s4: 'Reklamationen',
+    foot_s5: 'Verkaufsstellen',
+    foot_s6: 'Über uns',
+    foot_s7: 'Blog',
+    foot_h_news: 'Newsletter',
+    foot_news_p: 'Tipps, Angebote & neue Produkte — direkt in dein Postfach.',
+    foot_email_ph: 'Deine E-Mail',
+    foot_ok: 'OK',
+    foot_copy: '© 2026 Swiss Natural GmbH · Alle Rechte vorbehalten',
+    foot_pay_inv: 'Rechnung',
+    foot_privacy: 'Datenschutz',
+    foot_terms: 'AGB',
+    foot_imprint: 'Impressum',
+    cart_title: 'Warenkorb',
+    cart_empty: 'Dein Warenkorb ist leer',
+    cart_sub: 'Zwischensumme',
+    cart_checkout: 'Zur Kasse →',
+    cart_reassure: 'Sichere Bezahlung · Gratis Versand ab CHF 50',
+    aria_cart_close: 'Schließen',
+    toast_default: 'In den Warenkorb gelegt!',
+    toast_added: '{name} hinzugefügt!',
+    toast_wishlist: 'Zur Wunschliste hinzugefügt',
+    quiz_fallback_de: 'Swiss Natural Adult Huhn — unser Bestseller für jeden Hund',
+    quiz_fallback_en: 'Swiss Natural Adult Chicken — our bestseller for every dog'
+  },
+  en: {
+    meta_title: 'Swiss Natural — Grain-free dog food from Switzerland',
+    meta_desc: 'Gentle, grain-free dog and cat food with real Swiss meat. No grain, no compromises. Save up to 10% with a subscription.',
+    og_title: 'Swiss Natural — Natural food for loyal companions',
+    ann_html: '<strong>NEW: Swiss Natural subscription</strong> — Save up to 10% &amp; never forget to reorder',
+    aria_ann_close: 'Close',
+    nav_tagline: 'Natural pet food',
+    nav_dog: 'Dog food',
+    nav_cat: 'Cat food',
+    nav_abo: 'Subscribe',
+    nav_about: 'About us',
+    nav_faq: 'FAQ',
+    nav_shop: 'Shop now',
+    aria_search: 'Search',
+    aria_account: 'Account',
+    aria_cart: 'Cart',
+    aria_menu: 'Menu',
+    aria_lang_to_en: 'Switch to English',
+    aria_lang_to_de: 'Switch to German',
+    nav_drawer_title: 'Menu',
+    aria_drawer_close: 'Close menu',
+    og_image_alt: 'Happy dog — Swiss Natural pet food',
+    skip_main: 'Skip to content',
+    hero_eyebrow: 'Swiss quality · Grain-free',
+    hero_h1_html: 'Truly well fed.<br><em>From day one.</em>',
+    hero_sub: 'Grain-free dog and cat food with real meat from Switzerland. Gentle on digestion — honest about ingredients.',
+    hero_cta_shop: 'Shop',
+    hero_cta_quiz: 'Which food fits?',
+    hero_trust1: 'Swiss production',
+    hero_trust2: 'Grain-free',
+    hero_trust3: 'Free delivery from CHF 50',
+    hero_img_alt: 'Happy dog',
+    hero_badge_reviews: '1,200+<br>reviews',
+    logo_bar_label: 'Trusted since 2015',
+    logo_bar_1: '100% Swiss meat',
+    logo_bar_2: 'No grain, no fillers',
+    logo_bar_3: 'Delivery in 1–3 business days',
+    logo_bar_4: 'Personal customer care',
+    logo_bar_5: 'Up to 10% off with subscription',
+    cat_label: 'Our categories',
+    cat_h2_html: 'For dogs <em>&amp; cats</em>',
+    cat_see_all: 'View all products →',
+    cat1_img_alt: 'Dog food',
+    cat1_tag: 'Bestseller',
+    cat1_name_html: 'Soft<br>dog food',
+    cat1_link: 'Discover now',
+    cat2_img_alt: 'Cat food',
+    cat2_tag: 'New',
+    cat2_name: 'Cat food',
+    cat3_img_alt: 'Snacks & sausages',
+    cat3_tag: 'Popular',
+    cat3_name_html: 'Snacks &amp;<br>sausages',
+    cat_link_discover: 'Discover →',
+    prod_label: 'Products',
+    prod_h2_html: 'Bestselling<br><em>products</em>',
+    filter_all: 'All',
+    filter_dog: 'Dog food',
+    filter_cat: 'Cat food',
+    filter_snack: 'Snacks',
+    badge_bestseller: 'Bestseller',
+    badge_new: 'New',
+    badge_trial: 'Trial pack',
+    badge_topseller: '⭐ Top seller',
+    p1_cat: 'Dog food · Adult',
+    p1_name: 'Swiss Natural Adult Chicken',
+    p1_desc: 'Gentle complete food with 65% Swiss chicken. Grain-free and easy to digest.',
+    p1_img_alt: 'Adult dog food chicken',
+    p2_cat: 'Dog food · Adult',
+    p2_name: 'Swiss Natural Adult Beef',
+    p2_desc: 'Hearty beef from Swiss farms — no grains or artificial preservatives.',
+    p2_img_alt: 'Adult dog food beef',
+    p3_cat: 'Dog food · Junior',
+    p3_name: 'Swiss Natural Junior',
+    p3_desc: 'For puppies and young dogs — gentle and nutrient-rich for healthy growth.',
+    p3_img_alt: 'Junior dog food',
+    p4_cat: 'Dog food · Trial',
+    p4_name: 'Trial discovery set',
+    p4_desc: 'Five varieties to try. Perfect for picky pets.',
+    p4_img_alt: 'Trial food set',
+    p5_cat: 'Cat food · Adult',
+    p5_name: 'Swiss Natural Cat Chicken',
+    p5_desc: 'Wet complete food with Swiss chicken. High in protein, grain-free.',
+    p5_img_alt: 'Cat food',
+    p6_cat: 'Snacks · Rewards',
+    p6_name: 'Chicken training bites',
+    p6_desc: 'Crunchy treats from Swiss chicken — ideal for training rewards.',
+    p6_img_alt: 'Chicken snacks',
+    p7_cat: 'Dog food · Senior',
+    p7_name: 'Swiss Natural Senior',
+    p7_desc: 'Tailored nutrition for older dogs. Easy on joints and digestion.',
+    p7_img_alt: 'Senior dog food',
+    p8_cat: 'Snacks · Sausages',
+    p8_name: 'Pork mini sausages',
+    p8_desc: 'Juicy mini sausages from Swiss pork — a favourite with every dog.',
+    p8_img_alt: 'Sausage snacks',
+    btn_add_cart: 'Add to cart',
+    abo_label: 'Swiss Natural subscription',
+    abo_h2_html: 'Never run out<br><em>again.</em>',
+    abo_body: 'Build your personal subscription — your dog gets a fresh delivery on schedule, without you having to remember.',
+    abo_perk1: 'Save up to 10% on every subscription order',
+    abo_perk2: 'Change delivery interval anytime',
+    abo_perk3: 'Free shipping on all subscription orders',
+    abo_perk4: 'Cancel anytime — no risk',
+    abo_card_tag: 'Most popular plan',
+    abo_price_lbl_html: 'on every<br>delivery',
+    abo_save_badge: 'Save CHF!',
+    abo_f1: 'Pick your own varieties',
+    abo_f2: 'Delivery every 2 / 4 / 8 weeks',
+    abo_f3: 'Free shipping included',
+    abo_f4: 'Cancel whenever you like',
+    abo_f5: 'Pause easily in the app',
+    abo_cta: 'Start subscription →',
+    val_img1_alt: 'Swiss meadows',
+    val_img2_alt: 'Dog outdoors',
+    val_badge_html: 'Swiss<br>meat',
+    val_label: 'Why Swiss Natural',
+    val_h2_html: 'Honest ingredients.<br><em>No compromise.</em>',
+    val_body: 'We produce in Switzerland, source locally, and skip grain, fillers, and unnecessary additives. What you read on the label is what you get.',
+    val_p1_t: 'Swiss production',
+    val_p1_b: 'Made in Switzerland — short supply chains, high standards.',
+    val_p2_t: 'Regional meat',
+    val_p2_b: 'From Swiss farms — chicken, beef, and pork from responsible husbandry.',
+    val_p3_t: 'Grain-free',
+    val_p3_b: 'No wheat or fillers — for healthy digestion and a shiny coat.',
+    val_p4_t: 'Personal service',
+    val_p4_b: 'Questions? Our team replies quickly and honestly — no call-centre scripts.',
+    rev_label: 'Customer voices',
+    rev_h2_html: 'What pet lovers<br><em>say</em>',
+    rev_agg1: 'from 1,200+ reviews',
+    rev_agg2: 'Verified buyers',
+    rev1_text: '"Our Bernese Mountain Dog always had tummy issues. Since switching to Swiss Natural, things are much better. We are staying with it!"',
+    rev1_date: 'Zurich · March 2025',
+    rev1_tag: 'Adult Chicken',
+    rev2_text: '"The trial pack was brilliant — my two dogs found their favourites. Great service, fast delivery. Highly recommended."',
+    rev2_date: 'Bern · January 2025',
+    rev2_tag: 'Trial pack',
+    rev3_text: '"The subscription is so practical. I barely think about ordering — delivery is on time and my dog is thrilled every time."',
+    rev3_date: 'Basel · February 2025',
+    rev3_tag: 'Subscriber',
+    quiz_label: 'Food finder',
+    quiz_h2_html: 'Which food<br><em>fits my pet?</em>',
+    quiz_intro: 'Answer three quick questions — we will suggest the right Swiss Natural product for your companion.',
+    quiz_time: 'Takes under 60 seconds',
+    quiz_s1_lbl: 'Question 1 of 3',
+    quiz_q1: 'Which pet are you shopping for?',
+    quiz_opt_dog: 'Dog',
+    quiz_opt_cat: 'Cat',
+    quiz_s2_lbl: 'Question 2 of 3',
+    quiz_q2: 'How old is your pet?',
+    quiz_opt_young: 'Puppy / young (under 1 year)',
+    quiz_opt_adult: 'Adult (1–8 years)',
+    quiz_opt_senior: 'Senior (8+ years)',
+    quiz_back: '← Back',
+    quiz_s3_lbl: 'Question 3 of 3',
+    quiz_q3: 'Any special needs?',
+    quiz_opt_sens: 'Sensitive stomach',
+    quiz_opt_active: 'Very active / sport',
+    quiz_opt_norm: 'All normal',
+    quiz_res_title: 'Your recommendation:',
+    quiz_result_intro: 'Based on your answers we recommend: <strong>{result}</strong>',
+    quiz_cta_try: 'Try it now →',
+    quiz_restart: 'Start over',
+    proof1_html: '<strong>18,000+</strong> happy customers',
+    proof2_html: 'Support <strong>Mon–Fri 8am–5pm</strong>',
+    proof3_html: 'Shipping in <strong>1–3 business days</strong>',
+    proof4_html: 'Free delivery <strong>from CHF 50</strong>',
+    proof5_html: '<strong>100%</strong> Swiss production',
+    foot_tagline: '"No grain. No compromise. Only the best for your pet."',
+    foot_h_prod: 'Products',
+    foot_l1: 'Dog food adult',
+    foot_l2: 'Dog food junior',
+    foot_l3: 'Dog food senior',
+    foot_l4: 'Cat food',
+    foot_l5: 'Snacks & rewards',
+    foot_l6: 'Sausages',
+    foot_l7: 'Order trial pack',
+    foot_h_svc: 'Service',
+    foot_s1: 'Manage subscription',
+    foot_s2: 'FAQ',
+    foot_s3: 'Contact',
+    foot_s4: 'Claims',
+    foot_s5: 'Retailers',
+    foot_s6: 'About us',
+    foot_s7: 'Blog',
+    foot_h_news: 'Newsletter',
+    foot_news_p: 'Tips, offers & new products — straight to your inbox.',
+    foot_email_ph: 'Your email',
+    foot_ok: 'OK',
+    foot_copy: '© 2026 Swiss Natural GmbH · All rights reserved',
+    foot_pay_inv: 'Invoice',
+    foot_privacy: 'Privacy',
+    foot_terms: 'Terms',
+    foot_imprint: 'Imprint',
+    cart_title: 'Cart',
+    cart_empty: 'Your cart is empty',
+    cart_sub: 'Subtotal',
+    cart_checkout: 'Checkout →',
+    cart_reassure: 'Secure payment · Free shipping from CHF 50',
+    aria_cart_close: 'Close',
+    toast_default: 'Added to cart!',
+    toast_added: '{name} added!',
+    toast_wishlist: 'Added to wishlist',
+    quiz_fallback_de: 'Swiss Natural Adult Huhn — unser Bestseller für jeden Hund',
+    quiz_fallback_en: 'Swiss Natural Adult Chicken — our bestseller for every dog'
+  }
+};
+
+function getLang() {
+  return document.documentElement.classList.contains('lang-en') ? 'en' : 'de';
+}
+
+function T(key, vars) {
+  const lang = getLang();
+  let s = STR[lang][key];
+  if (s === undefined) s = STR.de[key];
+  if (s === undefined) return key;
+  if (vars) {
+    Object.keys(vars).forEach(function (k) {
+      s = s.split('{' + k + '}').join(vars[k]);
+    });
+  }
+  return s;
+}
+
+function applyI18n() {
+  const lang = getLang();
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(function (el) {
+    const k = el.getAttribute('data-i18n');
+    if (k && STR.de[k] !== undefined) el.textContent = T(k);
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+    const k = el.getAttribute('data-i18n-html');
+    if (k && STR.de[k] !== undefined) el.innerHTML = T(k);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+    const k = el.getAttribute('data-i18n-placeholder');
+    if (k && STR.de[k] !== undefined) el.placeholder = T(k);
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+    const k = el.getAttribute('data-i18n-alt');
+    if (k && STR.de[k] !== undefined) el.alt = T(k);
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
+    const k = el.getAttribute('data-i18n-aria');
+    if (k && STR.de[k] !== undefined) el.setAttribute('aria-label', T(k));
+  });
+  document.title = T('meta_title');
+  var md = document.querySelector('meta[name="description"]');
+  if (md) md.setAttribute('content', T('meta_desc'));
+  var og = document.querySelector('meta[property="og:title"]');
+  if (og) og.setAttribute('content', T('og_title'));
+  var ogd = document.querySelector('meta[property="og:description"]');
+  if (ogd) ogd.setAttribute('content', T('meta_desc'));
+  var ogl = document.querySelector('meta[property="og:locale"]');
+  if (ogl) ogl.setAttribute('content', lang === 'en' ? 'en_GB' : 'de_CH');
+  var ogla = document.querySelector('meta[property="og:locale:alternate"]');
+  if (ogla) ogla.setAttribute('content', lang === 'en' ? 'de_CH' : 'en_GB');
+  var twt = document.querySelector('meta[name="twitter:title"]');
+  if (twt) twt.setAttribute('content', T('og_title'));
+  var twd = document.querySelector('meta[name="twitter:description"]');
+  if (twd) twd.setAttribute('content', T('meta_desc'));
+  var ogia = document.querySelector('meta[property="og:image:alt"]');
+  if (ogia) ogia.setAttribute('content', T('og_image_alt'));
+  var lt = document.getElementById('langToggle');
+  if (lt) lt.setAttribute('aria-label', lang === 'de' ? T('aria_lang_to_en') : T('aria_lang_to_de'));
+  var sb = document.getElementById('navSearchBtn');
+  if (sb) sb.setAttribute('aria-label', T('aria_search'));
+  var ab = document.getElementById('navAccountBtn');
+  if (ab) ab.setAttribute('aria-label', T('aria_account'));
+  var cb = document.getElementById('cartBtn');
+  if (cb) cb.setAttribute('aria-label', T('aria_cart'));
+  refreshQuizResultIfNeeded();
+  renderCart();
+}
+
+function setLang(lang) {
+  document.documentElement.classList.toggle('lang-en', lang === 'en');
+  try {
+    localStorage.setItem('sn_lang', lang);
+  } catch (e) {}
+  applyI18n();
+}
+
+/* ─── NAV SHADOW ─── */
+window.addEventListener('scroll', function () {
+  document.getElementById('nav').classList.toggle('shadow', window.scrollY > 10);
+});
+
+/* ─── SCROLL REVEAL ─── */
+const revealObs = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(function (el) {
+  revealObs.observe(el);
+});
+
+/* ─── PRODUCT FILTER ─── */
+function filterProducts(cat, btn) {
+  document.querySelectorAll('.filter-tab').forEach(function (t) {
+    t.classList.remove('active');
+  });
+  btn.classList.add('active');
+  document.querySelectorAll('.prod-card').forEach(function (card) {
+    const show = cat === 'all' || card.dataset.cat === cat;
+    card.style.display = show ? 'flex' : 'none';
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(16px)';
+    if (show) {
+      setTimeout(function () {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+        card.style.transition = 'opacity .35s, transform .35s';
+      }, 10);
+    }
+  });
+}
+
+/* ─── CART ─── */
+let cart = [];
+function toggleCart() {
+  const drawer = document.getElementById('cartDrawer');
+  const overlay = document.getElementById('cartOverlay');
+  const open = drawer.classList.contains('open');
+  drawer.classList.toggle('open', !open);
+  overlay.classList.toggle('open', !open);
+  document.body.style.overflow = open ? '' : 'hidden';
+}
+
+function cartDisplayName(item) {
+  return getLang() === 'en' ? item.nameEn : item.nameDe;
+}
+
+function addToCart(e) {
+  if (e) e.stopPropagation();
+  const card = e && e.currentTarget && e.currentTarget.closest('.prod-card');
+  if (!card || !card.dataset.nameDe) return;
+  const nameDe = card.dataset.nameDe;
+  const nameEn = card.dataset.nameEn || nameDe;
+  const price = card.dataset.price;
+  const existing = cart.find(function (i) {
+    return i.nameDe === nameDe;
+  });
+  if (existing) existing.qty++;
+  else cart.push({ nameDe: nameDe, nameEn: nameEn, price: price, qty: 1 });
+  renderCart();
+  showToast(T('toast_added', { name: cartDisplayName(cart[cart.length - 1]) }));
+  if (!document.getElementById('cartDrawer').classList.contains('open')) toggleCart();
+}
+
+function addToCartFromQuiz(e) {
+  if (e) e.preventDefault();
+  if (!window.quizRecommend) return;
+  const r = window.quizRecommend;
+  const existing = cart.find(function (i) {
+    return i.nameDe === r.nameDe;
+  });
+  if (existing) existing.qty++;
+  else cart.push({ nameDe: r.nameDe, nameEn: r.nameEn, price: r.price, qty: 1 });
+  renderCart();
+  showToast(T('toast_added', { name: cartDisplayName(cart[cart.length - 1]) }));
+  if (!document.getElementById('cartDrawer').classList.contains('open')) toggleCart();
+}
+
+function renderCart() {
+  const items = document.getElementById('cartItems');
+  const empty = document.getElementById('cartEmpty');
+  const footer = document.getElementById('cartFooter');
+  const count = cart.reduce(function (a, i) {
+    return a + i.qty;
+  }, 0);
+
+  document.getElementById('cartCount').textContent = count;
+  empty.style.display = cart.length ? 'none' : 'block';
+  footer.style.display = cart.length ? 'block' : 'none';
+
+  items.innerHTML = cart
+    .map(function (item, idx) {
+      const nm = cartDisplayName(item);
+      return (
+        '<div class="cart-item">' +
+        '<div class="cart-item-img" style="background:var(--parchment); display:flex;align-items:center;justify-content:center;font-size:1.5rem;">🐾</div>' +
+        '<div class="cart-item-info">' +
+        '<div class="cart-item-name">' +
+        nm +
+        '</div>' +
+        '<div class="cart-item-price">' +
+        item.price +
+        '</div>' +
+        '<div class="cart-item-qty">' +
+        '<button type="button" class="qty-btn" onclick="changeQty(' +
+        idx +
+        ',-1)">−</button>' +
+        '<span class="qty-num">' +
+        item.qty +
+        '</span>' +
+        '<button type="button" class="qty-btn" onclick="changeQty(' +
+        idx +
+        ',1)">+</button>' +
+        '</div></div></div>'
+      );
+    })
+    .join('');
+
+  const totalNum = cart.reduce(function (a, i) {
+    const n = parseFloat(i.price.replace('CHF ', '').replace(',', '.'));
+    return a + n * i.qty;
+  }, 0);
+  document.getElementById('cartTotal').textContent = 'CHF ' + totalNum.toFixed(2);
+}
+
+function changeQty(idx, delta) {
+  cart[idx].qty += delta;
+  if (cart[idx].qty <= 0) cart.splice(idx, 1);
+  renderCart();
+}
+
+function wishlist(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  const btn = e.currentTarget;
+  btn.style.color = btn.style.color === 'rgb(192, 57, 43)' ? '' : '#c0392b';
+  showToast(T('toast_wishlist'));
+}
+
+/* ─── TOAST ─── */
+let toastTimer;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function () {
+    t.classList.remove('show');
+  }, 2500);
+}
+
+/* ─── QUIZ ─── */
+let quizData = {};
+const quizResultsDe = {
+  hund: {
+    jung: {
+      sensitiv: 'Swiss Natural Junior — sanft für junge Mägen',
+      aktiv: 'Swiss Natural Junior — reich an Proteinen',
+      normal: 'Swiss Natural Junior — das perfekte Starterpaket'
+    },
+    adult: {
+      sensitiv: 'Swiss Natural Adult Huhn — leicht verdaulich & sanft',
+      aktiv: 'Swiss Natural Adult Rind — kraftvoll & proteinreich',
+      normal: 'Swiss Natural Adult Huhn — der absolute Klassiker'
+    },
+    senior: {
+      sensitiv: 'Swiss Natural Senior — schont Gelenke & Verdauung',
+      aktiv: 'Swiss Natural Senior — angepasste Energie für aktive Senioren',
+      normal: 'Swiss Natural Senior — vollständig für den goldenen Herbst'
+    }
+  },
+  katze: {
+    jung: {
+      sensitiv: 'Swiss Natural Katze Junior — sanft & nährstoffreich',
+      aktiv: 'Swiss Natural Katze Junior — für verspiele Kätzchen',
+      normal: 'Swiss Natural Katze Junior — der beste Start ins Leben'
+    },
+    adult: {
+      sensitiv: 'Swiss Natural Katze Huhn — für sensible Mägen',
+      aktiv: 'Swiss Natural Katze Huhn — proteinreich & getreidefrei',
+      normal: 'Swiss Natural Katze Huhn — der Liebling der Stubentiger'
+    },
+    senior: {
+      sensitiv: 'Swiss Natural Katze Senior — leicht & verdaulich',
+      aktiv: 'Swiss Natural Katze Senior — für rüstige Senioren',
+      normal: 'Swiss Natural Katze Senior — liebevoll für dein Tier'
+    }
+  }
+};
+const quizResultsEn = {
+  hund: {
+    jung: {
+      sensitiv: 'Swiss Natural Junior — gentle for young stomachs',
+      aktiv: 'Swiss Natural Junior — high in protein',
+      normal: 'Swiss Natural Junior — the perfect starter pack'
+    },
+    adult: {
+      sensitiv: 'Swiss Natural Adult Chicken — easy to digest & gentle',
+      aktiv: 'Swiss Natural Adult Beef — hearty & protein-rich',
+      normal: 'Swiss Natural Adult Chicken — the absolute classic'
+    },
+    senior: {
+      sensitiv: 'Swiss Natural Senior — easy on joints & digestion',
+      aktiv: 'Swiss Natural Senior — tuned energy for active seniors',
+      normal: 'Swiss Natural Senior — complete for the golden years'
+    }
+  },
+  katze: {
+    jung: {
+      sensitiv: 'Swiss Natural Cat Junior — gentle & nutrient-rich',
+      aktiv: 'Swiss Natural Cat Junior — for playful kittens',
+      normal: 'Swiss Natural Cat Junior — the best start in life'
+    },
+    adult: {
+      sensitiv: 'Swiss Natural Cat Chicken — for sensitive stomachs',
+      aktiv: 'Swiss Natural Cat Chicken — high protein & grain-free',
+      normal: 'Swiss Natural Cat Chicken — a favourite with indoor cats'
+    },
+    senior: {
+      sensitiv: 'Swiss Natural Cat Senior — light & digestible',
+      aktiv: 'Swiss Natural Cat Senior — for sprightly seniors',
+      normal: 'Swiss Natural Cat Senior — made with care for your cat'
+    }
+  }
+};
+
+function getQuizResultStrings() {
+  const rDe =
+    quizResultsDe[quizData.s1] &&
+    quizResultsDe[quizData.s1][quizData.s2] &&
+    quizResultsDe[quizData.s1][quizData.s2][quizData.s3];
+  const rEn =
+    quizResultsEn[quizData.s1] &&
+    quizResultsEn[quizData.s1][quizData.s2] &&
+    quizResultsEn[quizData.s1][quizData.s2][quizData.s3];
+  const fallbackDe = 'Swiss Natural Adult Huhn — unser Bestseller für jeden Hund';
+  const fallbackEn = 'Swiss Natural Adult Chicken — our bestseller for every dog';
+  return {
+    de: rDe || fallbackDe,
+    en: rEn || fallbackEn
+  };
+}
+
+function setQuizResultHTML() {
+  const r = getQuizResultStrings();
+  window.quizRecommend = {
+    nameDe: 'Adult Huhn (empfohlen)',
+    nameEn: 'Adult Chicken (recommended)',
+    price: 'CHF 8.90'
+  };
+  const shown = getLang() === 'en' ? r.en : r.de;
+  document.getElementById('quizResultText').innerHTML = T('quiz_result_intro').replace(
+    '{result}',
+    shown
+  );
+}
+
+function refreshQuizResultIfNeeded() {
+  const res = document.getElementById('qsResult');
+  if (!res || !res.classList.contains('active')) return;
+  if (!quizData.s3) return;
+  setQuizResultHTML();
+}
+
+function quizSelect(btn, step, value) {
+  btn.closest('.quiz-options').querySelectorAll('.quiz-option').forEach(function (b) {
+    b.classList.remove('selected');
+  });
+  btn.classList.add('selected');
+  quizData['s' + step] = value;
+  setTimeout(function () {
+    if (step < 3) {
+      document.getElementById('qs' + step).classList.remove('active');
+      document.getElementById('qs' + (step + 1)).classList.add('active');
+      document.getElementById('quizBar').style.width = ((step + 1) / 3) * 100 + '%';
+    } else {
+      document.getElementById('qs3').classList.remove('active');
+      document.getElementById('qsResult').classList.add('active');
+      document.getElementById('quizBar').style.width = '100%';
+      setQuizResultHTML();
+    }
+  }, 300);
+}
+
+function quizBack(toStep) {
+  document.querySelectorAll('.quiz-step').forEach(function (s) {
+    s.classList.remove('active');
+  });
+  document.getElementById('qs' + toStep).classList.add('active');
+  document.getElementById('quizBar').style.width = (toStep / 3) * 100 + '%';
+}
+
+function quizReset() {
+  quizData = {};
+  window.quizRecommend = null;
+  document.querySelectorAll('.quiz-step').forEach(function (s) {
+    s.classList.remove('active');
+  });
+  document.getElementById('qs1').classList.add('active');
+  document.getElementById('quizBar').style.width = '33%';
+  document.querySelectorAll('.quiz-option').forEach(function (o) {
+    o.classList.remove('selected');
+  });
+}
+
+function closeMobileMenu() {
+  var d = document.getElementById('navDrawer');
+  var o = document.getElementById('navOverlay');
+  var b = document.getElementById('navBurger');
+  if (!d || !o) return;
+  d.classList.remove('open');
+  o.classList.remove('open');
+  document.body.classList.remove('nav-open');
+  d.setAttribute('aria-hidden', 'true');
+  d.setAttribute('hidden', '');
+  o.setAttribute('aria-hidden', 'true');
+  if (b) {
+    b.classList.remove('open');
+    b.setAttribute('aria-expanded', 'false');
+  }
+}
+
+function toggleMobileMenu() {
+  var d = document.getElementById('navDrawer');
+  var o = document.getElementById('navOverlay');
+  var b = document.getElementById('navBurger');
+  if (!d || !o) return;
+  if (d.classList.contains('open')) {
+    closeMobileMenu();
+    return;
+  }
+  d.removeAttribute('hidden');
+  d.classList.add('open');
+  o.classList.add('open');
+  document.body.classList.add('nav-open');
+  d.setAttribute('aria-hidden', 'false');
+  o.setAttribute('aria-hidden', 'false');
+  if (b) {
+    b.classList.add('open');
+    b.setAttribute('aria-expanded', 'true');
+  }
+  requestAnimationFrame(function () {
+    var l = d.querySelector('.nav-drawer-links a');
+    if (l) l.focus();
+  });
+}
+
+document.addEventListener('keydown', function (ev) {
+  if (ev.key !== 'Escape') return;
+  var d = document.getElementById('navDrawer');
+  if (d && d.classList.contains('open')) closeMobileMenu();
+});
+
+/* ─── INIT LANG ─── */
+(function () {
+  var saved = null;
+  try {
+    saved = localStorage.getItem('sn_lang');
+  } catch (e) {}
+  document.documentElement.classList.toggle('lang-en', saved === 'en');
+  applyI18n();
+  var toggle = document.getElementById('langToggle');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      setLang(getLang() === 'de' ? 'en' : 'de');
+    });
+  }
+})();
+
+</script>
+</body>
+</html>
